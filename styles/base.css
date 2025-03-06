@@ -110,9 +110,13 @@ h2,h3 {
     text-align: center;
 }
 footer {
+    background-attachment:#4caf;
     text-align: center;
-    padding: 10px 20px;
-    background-color: #4ca;
-    color: white; 
+    padding: 10px 0;
+}
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    
 }
 
