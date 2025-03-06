@@ -14,36 +14,45 @@
     <script src="scripts/getDates.js"></script>
 </head>
 <body>
-    <header>
-        <img src="images/profile.jpg" alt="Profile image" width="75" height="100" >
-        <span class="name">Evangelis Albesa</span>
-    </header>
-    <nav>
-        <ul>
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="#">Site Plan</a></li>
-            <li><a href="#"><Form></Form></a></li>
-        </ul>
-    </nav>
+   <header class="header">
+    <img src="images/profile.jpg" alt="Profile image" class="header-image" width="150" height="150">
+    <span class="header-name">Evangelis Albesa</span>
+   </header>
+   <nav class="nav">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="#">Site Plan</a></li>
+        <li><a href="#">Form</a></li>
+    </ul>
+</nav>
     <main>
-        <h1>WDD: Web Frontend Development</h1>
-        <div class="container">
-        <section class="card">
+      <div class="grid-container">
+        <section class="activities">
            <h2>Learning Activities</h2>
-           <ul>
-            <li><a href="holygrail.html">week 01: Layout </a> </li>
-            <li><a href="media-query.html">Week 01: Media Query</a></li>
-            <li><a href="#">Week 01: JS Pen</a></li>
+           <h3>Week 01:</h3>
+           <ul class="week">
+                <li><a href="#">Layout</a></li>
+                <li><a href="#">Media Query</a></li>
+                <li><a href="#">JS Pen</a></li>
            </ul>
+           <h3>Week 02:</h3>
+          
+           <h3>Week 03:</h3>
+          
+           <h3>Week 04:</h3>
+          
+           <h3>Week 05:</h3>
+          
         </section>
-        <section class="card">
-           <h2>Information</h2>
-           <p>Weather:</p>
-           <p>Location:</p>
-           <p>Visits:</p>
-        </section>
-    </div>
+
+        <aside class="info">
+            <h2>Information</h2>
+            <p><strong>Location:</strong></p>
+            <p><strong>Weather:</strong></p>
+            <p><strong>Page Visits:</strong></p>
+        </aside>
+      </div>
     </main>
     <footer>
         <p>&copy;2025 Evangelis Albesa Canada</p>
