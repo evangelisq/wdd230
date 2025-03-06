@@ -2,7 +2,6 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
     padding: 0;
     line-height: 1.6;
 }
@@ -43,9 +42,12 @@ body {
     transition: background-color 0.3s ease;
     font-size: 30px;
 }
+.nav ul li a.active{
+    background-color: #4ca;
+}
 .nav ul li a:hover {
-    background-color: yellow;
-    color: white;
+    background-color: darkgreen;
+    color: lightgreen;
 }
 h1 {
     font-weight: 400;
@@ -110,7 +112,7 @@ h2,h3 {
     text-align: center;
 }
 footer {
-    background-attachment:#4caf;
+    background-color:#4caf;
     text-align: center;
     padding: 10px 0;
 }
