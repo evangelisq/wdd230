@@ -63,6 +63,10 @@ h2,h3 {
    color: deepblue;
    margin-bottom: 10px;
 }
+h2 {
+    background-color: #4ca;
+   padding: 15px;
+}
 .grid-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
