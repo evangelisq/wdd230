@@ -10,9 +10,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #4ca;
+    background-color: #083D77;
     padding: 20px;
-    color: darkblue;
+    color: #FFFFFF;
     text-align: center;
     gap: 50px;
 }
@@ -22,8 +22,8 @@ body {
      
 }
 .nav {
-    background-color: lightgreen;
-    color: white;
+    background-color: #f0f0f0;
+    color: #112A46;
     padding: 10px 0;
 }
 .nav ul {
@@ -43,11 +43,11 @@ body {
     font-size: 30px;
 }
 .nav ul li a.active{
-    background-color: #4ca;
+    background-color: #008080;
 }
 .nav ul li a:hover {
-    background-color: darkgreen;
-    color: lightgreen;
+    background-color: #007bff;
+    color: #112A46;
 }
 h1 {
     font-weight: 400;
@@ -60,11 +60,12 @@ main {
 }
 
 h2,h3 {
-   color: darkblue;
+   color: #112A46;
    margin-bottom: 10px;
 }
 h2 {
-    background-color: #4ca;
+    background-color:  #083D77;
+    color: #FFFFFF;
    padding: 15px;
 }
 .grid-container {
@@ -116,13 +117,13 @@ h2 {
     text-align: center;
 }
 footer {
-    background-color:#4caf;
+    background-color: #083D77;
     text-align: center;
     padding: 10px 0;
 }
 footer p {
     margin: 5px 0;
     font-size: 14px;
-    
+    color: #FFFFFF;
 }
 
