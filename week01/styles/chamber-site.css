@@ -91,6 +91,9 @@ p {
   font-size: 25px;
 }
 
+.paragraph {
+  color: var(--accent1-color);
+}
 .colors {
   width: 100%;
   min-width: 350px;
