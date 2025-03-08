@@ -17,7 +17,7 @@ Fonts are separated by a & */
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #396E94;
   /* headlines on a white background */
-  --headline-color-on-color: white;
+  --headline-color-on-color: #112a46;
   /* headlines on a colored background */
   --paragraph-color-on-white: #396E94;
   /* paragraph text on a white background */
@@ -25,7 +25,7 @@ Fonts are separated by a & */
   /* paragraph text on a colored background */
   --paragraph-background-color: #396E94;
   --nav-link-color: #396E94;
-  --nav-background-color: #D4AC0D;
+  --nav-background-color: #d4ac0d;
   --nav-hover-link-color: white;
   --nav-hover-background-color: #396E94;
 }
@@ -39,14 +39,18 @@ body {
   padding:10em;
   font-size:18px;
   text-align:center;
-    background-color: aqua;
 }
 
 img {
   display:flow-root;
   margin: 0 auto;
   max-width:none;
-  background-image: green;
+  width: 300px;
+  height: 300px;
+}
+.wireframe{
+  width: 500px;
+  height: 600px;
 }
 
 h1 h2 h3 h4 h5 h6 {
@@ -55,7 +59,7 @@ h1 h2 h3 h4 h5 h6 {
 }
 ul li {
     text-align: left;
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 1px;
 }
 h2 {
@@ -71,8 +75,8 @@ hr {
 header {
   padding: 1em;
   text-align: center;
-  color: var(--headline-color-on-color);
-  background-color: var(--paragraph-background-color);
+  color: #112a46;
+  background-color: #f0f0f0;
 }
 
 header>h1,
@@ -82,8 +86,9 @@ header>h2 {
 
 p {
   font-family: var(--paragraph-font);
-  color: var(--paragraph-color-on-white);
   padding: 1em;
+  text-align: left;
+  font-size: 25px;
 }
 
 .colors {
