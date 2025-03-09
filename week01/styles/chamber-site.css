@@ -82,14 +82,19 @@ th {
   display: block;
   text-align: center;
 }
+figure {
+  text-align: center;
+}
 .desktop {
   width: 600px;
   height: 650px;
 }
-.mobile {
+ .mobile {
   width: 400px;
   height: 550px;
 }
+
+ 
 .section {
   display: flex;
   flex-direction: column;
