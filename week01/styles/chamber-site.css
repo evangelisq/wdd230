@@ -83,9 +83,7 @@ th {
   display: block;
   text-align: center;
 }
-figure {
-  text-align: center;
-}
+
 .desktop {
   width: 600px;
   height: 650px;
@@ -94,7 +92,9 @@ figure {
   width: 400px;
   height: 550px;
 }
-
+figure {
+  text-align: center;
+}
  
 .section {
   display: flex;
