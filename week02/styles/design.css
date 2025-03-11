@@ -55,3 +55,19 @@ footer {
 	font-size: smaller;
 	text-align: left;
 }
+.week ul li {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+    min-width: 120px;
+}
+.week li a {
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+.week li a:hover {
+    text-decoration: underline;
