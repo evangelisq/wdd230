@@ -27,7 +27,7 @@ img {
 }
 .nav {
     background-color: #f0f0f0;
-    color: #112A46;
+    color: #112A46; 
     padding: 10px 0;
 }
 .nav ul {
@@ -47,15 +47,16 @@ img {
     font-size: 30px;
 }
 .nav ul li a.active{
-    background-color: #008080;
+   /* background-color: #008080; */
+   background-color: #d9e6f2;
 }
 .nav ul li a:hover {
-    background-color: #007bff;
+    background-color: #d9e6f2;
     color: #112A46;
 }
 h1 {
     font-weight: 400;
-    font-family:cursive; /*before */
+    font-family:cursive; /*before san serif */
     color: #fff; /* before no color*/
     font-size: 60px; /* before it was san-serif to cursive */
 }
