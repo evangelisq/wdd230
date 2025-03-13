@@ -53,7 +53,7 @@ img {
 .nav ul li a:hover {
     background-color: #d9e6f2;
     color: #112A46;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* before no text shadow */
 }
 h1 {
     font-weight: 400;
