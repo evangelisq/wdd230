@@ -1,3 +1,2 @@
-const today = new Date();
-const dayOfMonth = today.getDate();
-console.log(dayOfMonth);
+const lastModified = document.lastModified;
+console.log("Last Modified:", lastModified);
