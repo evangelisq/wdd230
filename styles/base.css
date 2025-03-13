@@ -16,6 +16,10 @@ body {
     text-align: center;
     gap: 50px;
 }
+img {
+    width: 150px; 
+    height: 150px;
+}
 .header-name {
     font-size: 50px;
     font-weight: bold;
