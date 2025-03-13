@@ -51,8 +51,9 @@ body {
 }
 h1 {
     font-weight: 400;
-    font-family:cursive /*before */
+    font-family:cursive; /*before */
     color: #fff; /* before no color*/
+    font-size: 60px; /* before it was san-serif to cursive */
 }
 
 main {
