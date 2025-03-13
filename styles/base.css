@@ -51,6 +51,8 @@ body {
 }
 h1 {
     font-weight: 400;
+    font-family: 2rem; /*before */
+    color: #fff; /* before no color*/
 }
 
 main {
