@@ -18,7 +18,19 @@ body {
 }
 img {
     width: 150px; 
-    height: 150px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 10px 0;
+    position: static;
+}
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.header img {
+    flex: 1 1 100%;
 }
 .header-name {
     font-size: 50px;
@@ -170,5 +182,8 @@ footer p {
     nav ul {
         flex-direction: column;
         align-items: center;
+    }
+    img {
+        width: 100%;
     }
 }
