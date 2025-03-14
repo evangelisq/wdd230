@@ -20,18 +20,29 @@
 </head>
 <body>
    <header class="header">
-    <img src="images/profile.jpg" alt="Profile image">
+    <div class="profile">
+      <img src="images/profile.jpg" alt="Profile image">
+      <h1 class="name">Evangelis Albesa </h1>
+    </div>
+
+
     <!---before <span class="header-name">Evangelis Albesa</span>-->
-    <h1>Evangelis Albesa</h1>
+    <button id="dark-mode-toggle">🌙 Dark Mode</button> <!-- Step 7: Dark Mode Toggle -->
    </header>
-   <nav class="menu">
-  
-      <a href="index.html" class="active">Home</a>
-      <a href="chamber-site-plan.html">Chamber</a>
-      <a href="#">Site Plan</a>
-      <a href="#">Form</a>
-   
-</nav>
+
+   <nav class="navbar">
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="chamber-site-plan.html">Chamber</a></li>
+      <li><a href="#">Site Plan</a></li>
+      <li><a href="#">Form </a></li>
+    </ul>
+  </nav>
     <main>
       <div class="grid-container">
         <section class="activities">

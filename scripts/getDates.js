@@ -1,23 +1,15 @@
 
-const menuButton = document.querySelector('#hamburger');
-const menu = document.querySelector('.menu');
+const mobileMenu = document.getElementById("mobile-menu")
+const navList = document.querySelector("nav-list");
 
-menuButton.addEventListener('click', () => {
-    menu.classList.toggle('open'); // Toggles the visibility of the menu
-    menuButton.textContent = menu.classList.contains('open') ? 'X' : '☰'; // Updates button icon
+mobileMenu.addEventListener("click", () => {
+    navList.classList.toggle("active");
 });
+const darkModeToggle = document.getElementById("dark-mode-toggle");
 
-
-
-const darkModeToggle = document.querySelector('#dark-mode-toggle');
-const body = document.body;
-
-darkModeToggle.addEventListener('click', () => {
-    body.classList.toggle('dark-mode'); // Toggles dark mode
-    darkModeToggle.textContent = body.classList.contains('dark-mode') ? '☀ Light Mode' : '🌙 Dark Mode';
+darkModeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
 });
-
-
 
 document.getElementById("year").textContent = new Date ().getFullYear();
 
