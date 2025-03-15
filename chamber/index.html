@@ -7,18 +7,65 @@
     <meta name="description" content="WDD 230 WEb Frontend Development Evangelis Albesa The Greater Langley Chamber of Commerce is a dynamic organization supporting over 1,100 businesses in 
     Langley, British Columbia. It fosters economic growth and collaboration through advocacy, networking events, and business resources.">
     <meta name="author" content="Evangelis Albesa">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="myproject.ico">
     <meta property="og:title" content="Evangelis Q. Albesa - WDD 230 - Langley Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://ia.media-imdb.com/images/langley.jpg">
-    <meta property="og:url" content="https://evangelisq.github.io/wdd230">
+    <meta property="og:url" content="https://www.facebook.com/share/p/1MFYJWDXCD/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Welcome to the Chamber of Commerce</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#call-to-action">Join Us</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#spotlights">Spotlights</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main Content Section-->
+     <main>
+        <section id="hero" class="hero">
+            <img src="langley1.jpg" alt="Hero Image">
+            <h2>Building a strong business community</h2>
+        </section>
+        <section id="events" class="events">
+            <h2>Current Events</h2>
+            <ul>
+                <li>Monthly Networking Breakfast - April 20, 2025</li>
+                <li>Buiness Expo 2025 - May 10, 2025</li>
+                <li>Annual Gala Dinner - June 15, 2025</li>
+            </ul>
+        </section>
+        <section ids="sporlights" class="spotlights">
+            <h3>Company Spotlights</h3>
+            <div class="spotlight">
+               <h4>ABC Corp</h4>
+               <p> Leaders in sustainable business solution.</p>
+            </div>
+            <div class="spotlight">
+               <h4>XYZ Industries</h4>
+               <p>Innovating the future of technology.</p>
+            </div>
+            <div class="spotlight">
+               <h4>123 Enterprises</h4>
+               <p>Dedicated to community-driven success.</p>
+            </div>
+        </section>
+     </main>
+     <footer>
+        <p>©️ copy <span id="year"></span>  😊 Evangelis Albesa 😊 Chamber of Commerce,Canada. All right reserved</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+     </footer>
 </body>
 </html>
