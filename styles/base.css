@@ -168,7 +168,6 @@ h1 {
     font-family:cursive; /*before san serif */
     color: #fff; /* before no color*/
     font-size: 60px; /* before it was san-serif to cursive */
- 
 }
 
 h3 {
@@ -284,7 +283,9 @@ button .dark-mode-toggle {
    display: flex;
    justify-items: right;
 }
-
+.profile {
+    gap: 30px;
+}
 /*#menu.show::before {
 	content: "X";
 }*/
