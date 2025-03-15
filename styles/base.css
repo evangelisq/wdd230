@@ -34,9 +34,7 @@ img {
     width: 150px;
     height: 150px;
 }
-.name {
-    margin: 0;  
-}
+
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -180,8 +178,11 @@ h3 {
 h2 {
     background-color:  #083D77;
     color: #fff;
-   padding: 15px;
+    font-size: 35px;
+    margin-right: 0;
+    text-align: center;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
