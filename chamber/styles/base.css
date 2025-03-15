@@ -17,24 +17,24 @@ ul {
     margin: 0;
     padding: 0;
 }
-.header {
+header {
     background-color: #112a46;
     color: white;
     padding: 20px;
     text-align: center;
 }
-.nav ul {
+nav ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 10px;
 }
-.nav a {
+nav a {
     color: white;
     padding: 5px 10px;
     border-radius: 3px;
 }
-.nav a:hover {
+nav a:hover {
     background-color: #0056a5;
 }
 .hero {
@@ -109,7 +109,7 @@ ul {
     border-radius: 5px;
     box-shadow: 0 2px 5pc rgba(0,0,0,0.1);
 }
-.footer {
+footer {
     text-align: center;
     background-color: #112a46;
     color: white;
