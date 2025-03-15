@@ -173,13 +173,13 @@ h1 {
  
 }
 
-h2,h3 {
+h3 {
    color: #112A46;
    margin-bottom: 10px;
 }
 h2 {
     background-color:  #083D77;
-    color: #FFFFFF;
+    color: #fff;
    padding: 15px;
 }
 .grid-container {
