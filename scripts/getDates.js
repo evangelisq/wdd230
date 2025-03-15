@@ -1,14 +1,11 @@
 
-const mobileMenu = document.getElementById("mobile-menu")
-const navList = document.querySelector("nav-list");
+const hamMenu = document.querySelector(".ham-menu");
 
-mobileMenu.addEventListener("click", () => {
-    navList.classList.toggle("active");
-});
-const darkModeToggle = document.getElementById("dark-mode-toggle");
+const offScreenMenu = document.querySelector(".off-screen-menu");
 
-darkModeToggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
+hamMenu.addEventListener("click", () => {
+  hamMenu.classList.toggle("active");
+  offScreenMenu.classList.toggle("active");
 });
 
 document.getElementById("year").textContent = new Date ().getFullYear();
