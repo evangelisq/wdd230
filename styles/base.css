@@ -294,7 +294,7 @@ In most WDD courses there is a requirement to use a separate file. This part wou
 */
 
 
-@media (max-width: 768px;) {
+@media (max-width: 768px) {
    .menu-toggle {
     display: flex;
    }
