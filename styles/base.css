@@ -286,9 +286,9 @@ button .dark-mode-toggle {
 .profile {
     gap: 30px;
 }
-/*#menu.show::before {
+#menu.show::before {
 	content: "X";
-}*/
+}
 
 /* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.  
 
@@ -331,5 +331,5 @@ In most WDD courses there is a requirement to use a separate file. This part wou
     top: 50%;
     transform: translate(-50%, -50%);
     transition: .3s ease;
-}
+  }
 }

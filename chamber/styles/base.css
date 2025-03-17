@@ -80,3 +80,14 @@ nav ul li a {
     max-width: 600px;
     text-align: center;
 }
+footer {
+    background-color: #083D77;
+    text-align: center;
+    padding: 10px 0;
+}
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
