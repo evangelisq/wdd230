@@ -1,10 +1,22 @@
 @media (min-width:1024px) {
-    body {
-        margin: 0 auto;
-        max-width: 1200px;
-    }
     .hamburger-menu {
         display: none;
+    }
+    .menu {
+        left: 5px;
+        width: 150px;
+       /*display: flex;
+        flex-direction: row;
+        position: static;
+        background: none;
+        width: auto;
+        padding: 0;*/
+    }
+    .menu li {
+        margin: 0 15px;
+    }
+    .menu li a {
+        padding: 0;
     }
     nav .menu {
         display: flex;
@@ -13,8 +25,32 @@
         position: static;
         background: none;
     }
-    .content {
+    .hero {
+        padding: 6rem 2rem;
+    }
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .hero-buttons {
+        display: flex;
+        padding: 0.8rem;
+        width: 85%;
+        max-width: 250px;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        ;
+
+       /* flex-direction: row;
+        justify-content: center;*/
+    }
+    .hero-buttons button {
+        padding:1rem 2rem;
+        font-size: 1.2rem;
+    }
+    .content {
+        flex-direction: column;
         justify-content: space-between;   
         align-items: center;
     }
@@ -27,9 +63,5 @@
         flex: 2;
         text-align: left;
         padding-left: 1.5rem;
-    }
-    .hero-buttons button {
-        padding: 0.7rem 2rem;
-        font-size: 1.2rem;
     }
 }
