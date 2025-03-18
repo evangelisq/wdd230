@@ -3,6 +3,16 @@
         margin: 0 auto;
         max-width: 1200px;
     }
+    .hamburger-menu {
+        display: none;
+    }
+    nav .menu {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        position: static;
+        background: none;
+    }
     .content {
         flex-direction: row;
         justify-content: space-between;   

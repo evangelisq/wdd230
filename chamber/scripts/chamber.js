@@ -1,11 +1,9 @@
-document.querySelectorAll('nav ul li a').forEach(anchor => {
-    anchor.addEventListener('click', function (e){
-        e.preventDefault();
-        document.querySelector(this.getAttrbute('heref')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+const hamburger = document.querySelector('hamburger-menu');
+const menu = document.querySelector('.menu');
+
+hamburger.addEventListener ('click', () => {
+    menu.computedStyleMap.display = menu.style.display === 'flex'? 'none': 'flex'; 
+})
 
 document.getElementById("year").textContent = new Date ().getFullYear();
 
