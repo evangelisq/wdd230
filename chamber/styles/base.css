@@ -139,16 +139,17 @@ header button {
 .hero-buttons span {
     display: block;
     font-size: 0.8rem;
-    color: #ffd700;
+    color: #112A46;
     margin-top: 0.3rem;
 }
 
 .tagline {
     text-align: center;
-    background: #ffd700;
+    background: #F0F0F0;
     padding: 3.5rem;
     font-size: 2.2rem;
     font-weight: bold;
+    color:#112A46 ;
 }
 .content {
     display: flex;
