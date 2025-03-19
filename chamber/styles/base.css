@@ -28,14 +28,10 @@ header button {
 }
 .hamburger-menu {
     display: flex;  
-    flex-direction: column;    /*block;*/
+    flex-direction: column;   
     background: none;
     border: none;
-   /* color: white; */
     cursor: pointer;
-   /* position: absolute;
-    top: 1rem;
-    right:1rem; */
     z-index: 1000;
 }
 .hamburger-menu .line {
@@ -46,7 +42,6 @@ header button {
 }
 .menu {
     display: none;
-    /*list-style: none;*/
     flex-direction: column;
     background: #00539c;
     padding: 10px;
@@ -71,7 +66,6 @@ header button {
 .menu li a:hover {
     background: #004080;
 }
-/* comment*/
 .top-nav {
     display: flex;
     align-items: center;
@@ -88,24 +82,7 @@ header button {
     padding: 10px 15px;
     position: relative;
 }
-/*nav .menu {
-    display: none;
-    list-style: none;
-    flex-direction: column;
-    gap: 10px;
-    padding: 0;
-    margin: 0;
-    background: #00539c;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-}
-nav .menu li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-}*/
+
 .hero {
     text-align: center;
     padding: 4rem 1rem;
@@ -194,10 +171,6 @@ nav .menu li a {
 }
 .content p {
     width: 48%;
-   /* height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px; 
-    flex: 1; */
     font-size: 1rem;
     line-height: 1.6;
     color: #333;
