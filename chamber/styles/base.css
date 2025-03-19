@@ -109,6 +109,8 @@ header button {
     font-size: 2.5rem;
     color: #112A46;
     margin-bottom: 2rem;
+    background: #007acc;
+    margin:
 }
 .hero-buttons {
     display: flex;
