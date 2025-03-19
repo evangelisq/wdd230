@@ -24,6 +24,8 @@
     }
     .hero h1 {
         font-size: 3rem;
+        padding: 10px 20px;
+        text-align: center;
     }
     .hero-buttons {
         display: flex;
