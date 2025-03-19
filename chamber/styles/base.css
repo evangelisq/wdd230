@@ -107,8 +107,14 @@ header button {
 } 
 .hero h1 {
     font-size: 2.5rem;
-    color: #F0F0F0;
+    color: white;
     margin-bottom: 2rem;
+    background-color: #013220;
+    width: fit-content;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 8px;
+    padding: 20px;
 }
 .hero-buttons {
     display: flex;
