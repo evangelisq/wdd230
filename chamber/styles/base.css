@@ -141,7 +141,7 @@ header button {
 .hero-buttons span {
     display: block;
     font-size: 0.8rem;
-    color: #112A46;
+    color: white;
     margin-top: 0.3rem;
 }
 .hero-buttons span:hover {
