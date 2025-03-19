@@ -51,17 +51,14 @@
     }
     .content {
         flex-direction: column;
-        justify-content: space-between;   
+       text-align: center; 
         align-items: center;
     }
-    .content img {
-        flex: 1;
-        max-width: 50%;
-        margin: 0;
+    .content img, content p {
+       /width: 100%;
+       /* margin-bottom: 20px;*/
     }
-    .content p {
-        flex: 2;
-        text-align: left;
-        padding-left: 1.5rem;
+    .content img {
+        margin-bottom: 20px;
     }
 }
