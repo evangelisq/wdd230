@@ -143,7 +143,6 @@ header button {
     margin-top: 0.3rem;
 }
 .hero-buttons span:hover {
-    text-shadow: #007acc;
     color: white;
 }
 
