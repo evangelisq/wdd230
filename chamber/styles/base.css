@@ -107,7 +107,7 @@ header button {
 } 
 .hero h1 {
     font-size: 2.5rem;
-    color: white;
+    color: #112A46;
     margin-bottom: 2rem;
 }
 .hero-buttons {
@@ -141,6 +141,10 @@ header button {
     font-size: 0.8rem;
     color: #112A46;
     margin-top: 0.3rem;
+}
+.hero-buttons span:hover {
+    text-shadow: #007acc;
+    color: white;
 }
 
 .tagline {
