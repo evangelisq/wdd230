@@ -191,7 +191,7 @@ h1 {
     font-weight: 400;
     font-family:cursive; /*before san serif */
     color: #fff; /* before no color*/
-    font-size: 60px; /* before it was san-serif to cursive */
+    font-size: 50px; /* before it was san-serif to cursive */
 }
 
 h3 {
