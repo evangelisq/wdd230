@@ -1,33 +1,28 @@
 * {
-	margin: 0;
-	padding: 0;
-   box-sizing: border-box;
-   list-style: none ;
+    margin: 0;
+    padding: 0;
+   /* box-sizing: border-box;*/
+    list-style: none ;
     text-decoration: none;
 }
 body {
-   position: relative;*/
-   z-index: 0;
-   font-family: "Roboto", sans-serif;
-   margin: 0;
+    font-family: "Roboto", sans-serif;
     padding: 0;
-    
-    transition: background-color 0.3s, color 0.3s;*/
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
 }
-.header {
-   display: flex;
+header {
+    display: flex;
    flex-direction: column;
-    align-items: center;*/
-    text-align: center;
+    align-items: center;
     padding: 20px;
     background-color: #112A46;
     color: white;
-   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 .profile {
     display: flex;
     align-items: center;  
-
 }
 .profile-pic {
     width: 60px;
@@ -38,74 +33,35 @@ body {
 .profile img {
     width: 150px;
     height: 150px;
-    margin-top: 15px;
 }
-/*main {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 400px;
-}*/
-
- 
-.hero-label {
-   /*position: absolute;*/
-    top: 250px;
-    left: 30px;
-    background:#112A46;
-    border: 1px solid rgba(0,0,0,0.75);
-    /*padding: 1.5rem;*/
-    box-shadow: 1 1 5rem;
-    opacity: 0.95;
-    color: #fff;
-    font-family:cursive;
-    border-radius: 10px;
-    font-size: 20px;
-    margin: 0;
-}
- 
-.hero-label p {
-    padding: 1rem;
-    font-size: 1.5rem;
-    position: flex;
-    flex-direction: right;
-    top: 50%;
-    right: 10px;
-    background-color: #112A46;
-    font-family: cursive;
-    box-shadow:#d9e6f2;
-    text-shadow:0 1px 1px #FFFFFF;
-   
-    text-overflow: auto;
-}
-
-.hero-image {
-   position: relative; 
-   top: 0;
-   left: 0; 
-   width: 100%;
-   display: relative;
-   justify-content: center;
-   align-items: center;
-   max-width: 1200px; 
-    margin-top: 0; 
-   /*height: 400px; */
-    object-fit: fill;
+.hero-image{
+    /*display: flex;*/
     position: relative;
-
+  /*  justify-content: center;
+    align-items: center;*/
+    height: auto; /*400px;*/
+    width: 100%; /*950px;*/
 }
-.hero-image picture, img {
-   width: 100%;
-   height: 30%;
-   object-fit: cover;
+hero-image picture, .hero-image img {
+    width: 100%;
+    height: auto; /*100%;*/
+    object-fit: cover;
 }
-.hero-image img {
+.hero-label h1 {
     position: absolute;
-    top: 150%;
-    left: 100%;
-    transform: translate(-5%, -50%);
+    top: 20%;
+    left: 25px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2.5rem;
+    text-align: left;
+    background-color: #112A46;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px;
 }
+
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -120,14 +76,14 @@ a:hover {
 }
 /* off-screen-menu */
 .off-screen-menu {
-    position: fixed;
     background-color:  rgb(34, 37, 49);
-    height: 30vh; /*30vh;*/
-    width: 350px; /*350px;*/
-    flex-direction: column;
-    left: -450px;
-    top: 150px;   /*150px;*/
-    display: flex;         /* flex;*/
+    height: 30vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 220px;
+    right: -450px;
+    display: flex;
     flex-direction: column;
     align-items: center;    
     justify-content: center;
@@ -137,8 +93,7 @@ a:hover {
     z-index: 10;
 }
 .off-screen-menu.active {
-    display: flex;
-    left: 0;
+    right: 0;
 }
 
 /* nav */
@@ -150,27 +105,19 @@ nav {
 
 /* ham menu */
 .ham-menu {
-   display: block;
-   height: 10px;
+    height: 50px;
     width: 40px;
-   top: 20px;
-   left: 20px;
-   font-size: 2rem;
-   cursor: pointer;
-   z-index: 20;
-   margin-left: 20px;
-    position:   relative;  /*relative;*/
-   margin-top: -60px;
+    margin-left: auto;
+    position: relative;
 }
 .ham-menu span {
-    height:10px;
+    height: 5px;
     width: 100%;
-    background-color: white;
-    padding: 15px;
-    border-radius: 5px;
+    background-color: #112A46;
+    border-radius: 25px;
     position: absolute;
     left: 50%;
-    top: 30%;
+    top: 50%;
     transform: translate(-50%, -50%);
     transition: .3s ease;
 }
@@ -207,7 +154,7 @@ nav {
 ul li {
     list-style: none;
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     justify-content: space-around;
     gap: 20px;
     margin: 0;
@@ -222,7 +169,7 @@ ul li a {
     font-size: 30px;
 }
 ul li a.active{
-    background-color: #008080; 
+    /* background-color: #008080; */
     background-color: #d9e6f2;
  }
 ul li a:hover {
@@ -263,7 +210,7 @@ h2 {
     display: grid;
     grid-template-columns: 2fr 1fr;
     
- 
+    gap: 20px;
 }
 .activities h3 {
    margin-top: 20px;
@@ -364,7 +311,7 @@ button .dark-mode-toggle {
     gap: 30px;
 }
 #menu.show::before {
-	content: "X";
+    content: "X";
 }
 
 /* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.  
@@ -409,24 +356,22 @@ In most WDD courses there is a requirement to use a separate file. This part wou
     transform: translate(-50%, -50%);
     transition: .3s ease;
   }
-  
-  .off-screen-menu {
-    display: none;
-  }
   .hero-image {
-    max-width: 100%;
-  }
-  .hero-label {
-     font-size: 1.8rem;
-     padding: 15px;
-     max-width: 90%;
-     word-wrap: break-word;
+    /*max-height:5250px;
+    object-fit: contain;
+    max-width: 1200px;
+    margin: 0 auto;*/
+    height: 300px;
   }
 }
 @media (min-width:768px) {
-    img {
-        height: 500px;
+    .hero-image img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+    .hero-label {
+        font-size: 1.8rem;
+        left: 10px;
     }
 }
     
-
