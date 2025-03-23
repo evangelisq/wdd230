@@ -220,7 +220,7 @@ h2 {
    margin-top: 20px;
 }
 
-.week01 {
+.week01, .week03 {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -229,7 +229,7 @@ h2 {
     gap: 15px;
     
 }
-.week01 li {
+.week01 li, .week03 li {
     padding: 10px 20px;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -238,12 +238,12 @@ h2 {
     flex: 1;
     min-width: 120px;
 }
-.week01 li a {
+.week01 li a, .week03 li a{
     text-decoration: none;
     font-weight: bold;
     
 }
-.week01 li a:hover {
+.week01 li,  .week03 li a:hover {
     text-decoration: underline;
 }
 .week02 {
