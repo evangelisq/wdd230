@@ -90,7 +90,7 @@ a:hover {
     width: 100%;
     max-width: 450px;
     position: fixed;
-    top: 220px;
+    top: 260px;
     right: -450px;
     display: flex;
     flex-direction: column;
