@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evangelis Q. Albesa - WDD230 - Portfolio</title>
+    <meta name="description" content="WDD 230 WEb Frontend Development Evangelis Albesa Focuses on fundamentals of web developmwnt, particularly uinf HTMK, CSS, and JavaScript.. It emphasizez creating responsive and accessible web pages while adhring to modern web standards.">
+    <meta name="author" content="Evangelis Albesa">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Evangelis Q. Albesa - WDD 230 - Portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ia.media-imdb.com/images/profile.jpg">
+    <meta property="og:url" content="https://www.facebook.com/share/p/1MFYJWDXCD/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="scripts/discover.js" defer></script>
+</head>
+<body>
+  <header class="header">
+   <div class="profile">
+     <img src="images/discover.webp" alt="Profile image">
+     <h1>Evangelis Albesa</h1>
+</div>
+  
+  
+   <!---before <span class="header-name">Evangelis Albesa</span>-->
+   <button id="dark-mode-toggle">🌙 Dark Mode</button> <!-- Step 7: Dark Mode Toggle -->
+  </header>
+  <div class="off-screen-menu">
+   <ul>
+     <li><a href="index/html">Home</a></li>
+     <li><a href="index.html">Chamber</a></li>
+     <li><a href="chamber-site-plan.html">Site-Plan</a></li>
+     <li><a href="#">Form</a></li>
+   </ul>
+ </div>
+
+ <nav>
+   <div class="ham-menu">
+     <span></span>
+     <span></span>
+     <span></span>
+   </div>
+ </nav>
+ <div class="grid-container">
+    <aside class="sidebar">
+         <h2>Welcome</h>
+            <p><strong>Stats:</strong>Population:1,000,000</p>
+            <p><strong>Upcoming Events:</strong>Local Festival:</p>
+         <p>Demographics, statistics, events, or other details go here</p>
+         <p id="visit-message">Loading..</p>
+    </aside>
+    
+   <main class="main-content">
+       <h2>Gallery</h2>
+       <figure>
+           <img src="images/discover1.webp" alt="small-Stores" loading="lazy">
+           <figcaption>Small stores</figcaption>
+       </figure>
+       <figure>
+        <img src="images/discover2.webp" alt="langley-hall" loading="lazy">
+        <figcaption>Langley Hall</figcaption>
+       </figure>
+       <figure>
+        <img src="images/discover3.webp" alt="park" loading="lazy">
+        <figcaption>Park</figcaption>
+       </figure>
+       <figure>
+        <img src="images/discover4.webp" alt="store2" loading="lazy">
+        <figcaption>Stores</figcaption>
+       </figure>
+       <figure>
+        <img src="images/discover5.webp" alt="historic-house" loading="lazy">
+        <figcaption>Historic house</figcaption>
+       </figure>
+       <figure>
+        <img src="images/discover6.webp" alt="night-market" loading="lazy">
+        <figcaption>Night market</figcaption>
+       </figure>
+   </main>
+</div>
+   <div class="map-container">
+    <a href="https://g.co/kgs/w6N3RLk" target="_blank">
+      <img src="images/map.webp" alt="google map" loading="lazy">
+    </a>
+   
+   <iframe src="https://g.co/kgs/w6N3RLk"
+   width="100"
+   height="300"
+   loading="lazy"
+   style="border: 0;"
+   allowfullscreen>
+  </iframe>
+</div>
+   <footer>
+       <p>& copy <span id="year"></span>  😊 Evangelis Albesa😊 Canada</p>
+       <p>Last Modified: <span id="last-modified"></span></p>
+   </footer>
+</body>
+</html>
