@@ -16,6 +16,17 @@ darkModeToggle.addEventListener('click', () => {
     darkModeToggle.textContent = body.classList.contains('dark-mode') ? '☀ Light Mode' : '🌙 Dark Mode';
 });
 
+const visitCounterElement = document.getElementById('visit-counter');
+let visitCount = localStorage.getItem('visitCount');
+if (visitCount) {
+    visitCount - parseInt(visitCount, 10) + 1;
+} else {
+    visitCount = 1;
+}
+
+localStorage.setItem('visitCount', visitCount);
+visitCounterElement.textContent = visitCount = visitCount;
+
 document.getElementById("year").textContent = new Date ().getFullYear();
 
 document.getElementById("last-modified").textContent = document.lastModified;
