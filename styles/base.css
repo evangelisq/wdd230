@@ -222,7 +222,7 @@ h2 {
    margin-top: 20px;
 }
 
-.week01, .week03 {
+.week01, .week03, .week04 {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -230,10 +230,10 @@ h2 {
     margin: 10px 0 20px 0;
     gap: 15px;
 }
-.week03 li a {
+.week03 li a .week04 li a {
     overflow: hidden;
 }
-.week01 li, .week03 li {
+.week01 li, .week03 li, .week04 li {
     padding: 10px 20px;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -247,10 +247,10 @@ h2 {
     font-weight: bold;
     
 }
-.week01 li,  .week03 li a:hover {
+.week01 li,  .week03 .week05 li a:hover {
     text-decoration: underline;
 }
-.week02 {
+.week02, .week04 {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -259,7 +259,7 @@ h2 {
     gap: 15px;
     
 }
-.week02 li {
+.week02 li, .week04{
     padding: 10px 20px;
     background-color: #fff;
     border: 1px solid #ccc;
