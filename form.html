@@ -46,7 +46,27 @@
    </div>
  </nav>
    <main>
-    
+      <form method="get" action="record.html"></form>
+         <label for="username">Username</label>
+         <input type="text" id="username" name="username" required>
+
+         <label for="password">Password</label>
+         <input type="password" id="password" name="password" required>
+
+         <label for="confirm-password">Confirm Password</label>
+         <input type="password" id="confirm" name="confirm-password" required>
+
+         <label for="email">Email</label>
+         <input type="text" id="email" name="email" reqiured>
+              pattern=
+            
+             title= Please enter a valid byui.edu email address. 
+
+        <label for="rating">Page Rating(1 to 10)</label>
+        <input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="document.getElementById('ratingValue') .textContent = this.value;">
+        <div class="range-display"> Current Value: <span id="ratingValue">5</span></div>
+
+        <button type="submit">Submit</button>
    </main>
    <footer>
        <p>& copy <span id="year"></span>  😊 Evangelis Albesa😊 Canada</p>

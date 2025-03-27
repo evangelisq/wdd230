@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #0056b3;
+    --border-radius: 10px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -40,37 +46,7 @@ body {
     width: 150px;
     height: 150px;
 }
-.hero-image{
-    display: block;
-    position: relative;
-    align-items: center;
-    height: auto;
-    max-height: 600px;
-    width: 100%; 
-    overflow: hidden;
-    z-index: 1;
-}
 
-.hero-image picture, .hero-image img {
-    width: 100%;
-    height: auto; 
-    object-fit: cover;
-}
-
-.hero-label h1 {
-    position: absolute;
-    top: 20%;
-    left: 25px;
-    transform: translateY(-50%);
-    color: white;
-    font-size: 1.5rem;
-    text-align: left;
-    background-color: #112A46;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 2px 5px 5px;
-}
 
 .menu-toggle {
     display: none;
@@ -211,7 +187,7 @@ h2 {
     text-align: center;
 }
 
-.grid-container {
+/*.grid-container {
     display: grid;
     grid-template-columns:  1fr;
     gap: 20px;
@@ -293,7 +269,40 @@ h2 {
 .info p {
     margin: 10px 0;
     text-align: center;
-}
+} */
+ form{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+ }
+ label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+ }
+ input, button {
+    width: 100%;
+    padding 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+ }
+ button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+ }
+ button:hover {
+    background-color: var(--secondary-color);
+ }
+ .range-display {
+    margin-top: 8px;
+    font-style: italic;
+ }
 footer {
     background-color: #083D77;
     text-align: center;
