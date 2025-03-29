@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <script src="scripts/form.js" defer></script>
+    <script src="scripts/record.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -46,26 +47,49 @@
    </div>
  </nav>
    <main>
-      <form method="get" action="record.html"></form>
+      <form id="registrationForm" action="record.html" method="GET">
+      <h2>Complete Form</h2>
+
          <label for="username">Username</label>
          <input type="text" id="username" name="username" required>
 
          <label for="password">Password</label>
-         <input type="password" id="password" name="password" required>
+         <input 
+         type="password" 
+         id="password" 
+         name="password" 
+         pattern="[a-zA-Z0-9]{8,}"
+         title="Password must be at least 8 characters long and contain only letters and numbers" required>
 
          <label for="confirm-password">Confirm Password</label>
-         <input type="password" id="confirm" name="confirm-password" required>
+         <input 
+         type="password" id="confirmPassword" 
+         name="confirm-password" required>
+
+         <span id="errorMessage"></span>
 
          <label for="email">Email</label>
-         <input type="text" id="email" name="email" reqiured pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" or [a-zA-Z0-9._%+\-]+@byui\.edu"
-         title="Please enter a valid email address">
+         <input type="email" 
+         id="email" 
+         name="email" 
+         pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+         title="Please enter a valid email address" required >
        
 
-        <label for="rating">Page Rating(1 to 10)</label>
-        <input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="document.getElementById('ratingValue') .textContent = this.value;">
-        <div class="range-display"> Current Value: <span id="ratingValue">5</span></div>
+        <label for="pageRating">Page Rating(1 to 10):</label>
+        <input 
+        type="range" 
+        id="pageRating" 
+        name="pageRating" 
+        min="1" 
+        max="10" 
+        step="1" 
+        oninput="updateRatingValue(this.value)">
+        <span id="ratingValue">5</span>
+        </div>
 
         <button type="submit">Submit</button>
+     </form>
    </main>
    <footer>
        <p>& copy <span id="year"></span>  😊 Evangelis Albesa😊 Canada</p>
