@@ -17,9 +17,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/join.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 </head>
 <body>
     <header>
@@ -43,7 +43,39 @@
         </nav>
     </header>
     <main>
-       
+       <form method="get" action="thankyou.html"></form>
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required>
+
+          <label for="LastName">Last Name:</label>
+          <input type="text" id="LastName" name="LastName" required>
+
+          <label for="title">Title/Position:</label>
+          <input type="text" id="title" name="title" pattern="[A-Za-z\\-]{17,}" required>
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required placeholder="example@emai;.com">
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <label for="organizationName">Organization Name</label>
+          <input type="text" id="organizationName" name="organizationName" required>
+
+          <label for="membershipLevel">Membership Level</label>
+          <select id="membershipLevel" name="membershipLevel">
+            <option value="np">NP membership</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+
+          <label for="description">Description:</label>
+          <textarea id="description" name="desciption"></textarea>
+
+          <input type="hidden" id="timestamp" name="timestamp" value="2025-03-29T12:34:00">
+
+          <input type="submit" value="submit">
     </main>
      <footer>
         <p>©️ copy <span id="year"></span>  😊 Evangelis Albesa WDD 230😊 Chamber of Commerce,Canada. All right reserved</p>
