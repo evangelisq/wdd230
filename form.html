@@ -69,16 +69,16 @@
          <span id="errorMessage"></span>
 
          <label for="email">Email</label>
-         <input type="email" 
+         <input type="text" 
          id="email" 
          name="email" 
-         pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+         pattern= "[a-zA-Z0-9._%+\-]+@byui\.edu"
          title="Please enter a valid email address" required >
        
 
-        <label for="pageRating">Page Rating(1 to 10):</label>
+        <!--<label for="pageRating">Page Rating(1 to 10):</label>
         <input 
-        type="range" 
+        type="text" 
         id="pageRating" 
         name="pageRating" 
         min="1" 
@@ -86,13 +86,30 @@
         step="1" 
         oninput="updateRatingValue(this.value)">
         <span id="ratingValue">5</span>
-        </div>
-
+        </div> -->
+        <label for="r">Page Rating (1 to 10):</label>
+        <div id="rangevalue">0</div>
+<input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+<datalist id="rangevalues">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+    <option value="5">5</option>
+    <option value="5">6</option>
+    <option value="5">7</option>
+    <option value="5">8</option>
+    <option value="5">9</option>
+</datalist>
+<div class="ref">
+	<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">MDN Input: Range</a>
+</div>
         <button type="submit">Submit</button>
      </form>
    </main>
    <footer>
-       <p>& copy <span id="year"></span>  😊 Evangelis Albesa😊 Canada</p>
+       <p>@ copy <span id="year"></span>  😊 Evangelis Albesa😊 Canada</p>
        <p>Last Modified: <span id="last-modified"></span></p>
    </footer>
 </body>

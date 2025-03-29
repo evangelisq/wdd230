@@ -38,6 +38,17 @@ darkModeToggle.addEventListener('click', () => {
 // Example of dynamic styling using JS
 //document.documentElement.style.setProperty('--primary-color', #28a745)
 //});
+const rangevalue = document.getElementById("rangevalue");
+const range = document.getElementById("r");
+
+// RANGE event listener
+range.addEventListener('change', displayRatingValue);
+range.addEventListener('input', displayRatingValue);
+
+function displayRatingValue() {
+    rangevalue.innerHTML = range.value;
+}
+
 document.getElementById('registrationForm').addEventListener('submit', function(event){
     const password = document.getElementById('password').value;
     const confirmPassword = document.getElementById('confirmPassword').value;
