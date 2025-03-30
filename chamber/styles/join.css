@@ -169,26 +169,33 @@ main {
     max-width: 1200px;
     margin: 50px auto;
     gap: 20px;
+
 }
 .form-container {
-    flex: 1 1 60%;
+    flex: 1 1 80%;
     padding: 20px;
     background-color: #ffffff;
-    border: 3px solid #3c91e6; /*1px solid #cccccc;*/
+    border: 3px solid #333333; /*1px solid #cccccc;*/
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .membership-benefits {
     flex: 1 1 35%;
-    padding: 15px;
-    background-color: #3c91e6; /* #f9f9f9;*/
-    color: #FFFFFF;
+    padding: 20px;
+    text-align: left;
+    max-width: 600px;
+    background-color: #3c91e6 ;/* #3c91e6; #f9f9f9;*/
+    color:  #ffffff; /*#FFFFFF;*/
     border: 3px solid #333333;
     box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .membership-benefits h3 {
-    color: #ffe93a;
+    color: #004;
     margin-top: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: bold;
+    text-transform: uppercase;
 }
 .membership-benefits ul {
     list-style-type: none;
@@ -197,23 +204,28 @@ main {
 .membership-benefits li {
     margin: 10px 0;
 }
+.membership-benefits li:hover {
+    background-color: #ace;
+    transform: translateY(-2px);
+    color: #112A46;
+}
 label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #333;
+    color: #004aad;/*#333;*/
 }
 input, select, textarea  {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 2px solid #3c91e6;
+    border: 2px solid #333333;
     border-radius: 5px;
     font-size: 14px;
 }
 input[type="submit"] {
     background-color: #ffe93a;
-    color: #333333;
+    color: #004aad;
     border: none;
     padding: 10px 15px;
     font-weight: bold;
@@ -223,7 +235,7 @@ input[type="submit"] {
     transition: backround-color 9.3s ease, transform 0.2s ease;
 }
 input [type="submit"]:hover {
-    background-color: #ffcc00;
+    background-color: #ffd700;
     transform: translate(-2px);
 }
 
