@@ -106,7 +106,7 @@ main {
     background-color: #3c91e6;/* #f9f9f9;*/
     color: #FFFFFF;
     border: 3px solid #333333;
-    border-radius:0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .membership-benefits h3 {
     color: #ffe93a;
