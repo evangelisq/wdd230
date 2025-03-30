@@ -153,4 +153,11 @@ footer p {
     font-size: 14px;
     color: #FFFFFF;
 }
-
+@media screen and (max-width: 768px) {
+    .form-container {
+        flex-wrap: wrap;
+    }
+    .form-container. .membership-benefits {
+        flex: 1 1 100%;
+    }
+}
