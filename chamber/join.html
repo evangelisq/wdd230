@@ -3,95 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Chamber Join Page</title>
-    <meta name="description" content="WDD 230 WEb Frontend Development Evangelis Albesa Join our Chamber of Commerce and unlock exclusive networking opportunities,
-    business resources, and community events. Elevate your organization's success and connect with industry leaders today.">
+    <title>Evangelis Q. Albesa - WDD230 - The Chamber Discover Page</title>
+    <meta name="description" content="WDD 230 WEb Frontend Development Evangelis Albesa Focuses on fundamentals of web developmwnt, particularly uinf HTMK, CSS, and JavaScript.. It emphasizez creating responsive and accessible web pages while adhring to modern web standards.">
     <meta name="author" content="Evangelis Albesa">
-    <link rel="icon" href="myproject.ico">
-    <meta property="og:title" content="Evangelis Q. Albesa - WDD 230 - Langley Chamber of Commerce">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Evangelis Q. Albesa - WDD 230 - Portfolio">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://ia.media-imdb.com/images/langley2.jpg">
+    <meta property="og:image" content="https://ia.media-imdb.com/images/profile.jpg">
     <meta property="og:url" content="https://www.facebook.com/share/p/1MFYJWDXCD/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
     
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="scripts/join.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="top-nav">
-            <button>Login</button>
-            <button>Email</button>
-        </div>
-        <nav class="navbar">
-            <button class="hamburger-menu" aria-label="Toggle navigation">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </button>
-            <ul class="menu">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Advocacy</a></li>
-                <li><a href="#">Program</a></li>
-                <li><a href="#">Resources</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-     <div class="form-container">
-       <form method="get" action="thankyou.html">
-          <label for="firstName">First Name:</label>
-          <input type="text" id="firstName" name="firstName" required>
+  <header class="header">
+   <div class="profile">
+     <img src="images/myself.webp" alt="Profile image">
+     <h1>Evangelis Albesa</h1>
+</div>
+  
+   <!---before <span class="header-name">Evangelis Albesa</span>-->
+   <button id="dark-mode-toggle">🌙 Dark Mode</button> <!-- Step 7: Dark Mode Toggle -->
+  </header>
+  <div class="off-screen-menu">
+   <ul>
+     <li><a href="index.html">Home</a></li>
+     <li><a href="index.html">Chamber</a></li>
+     <li><a href="chamber-site-plan.html">Site Plan</a></li>
+     <li><a href="form.html">Form</a></li>
+   </ul>
+ </div>
 
-          <label for="LastName">Last Name:</label>
-          <input type="text" id="LastName" name="LastName" required>
-
-          <label for="title">Title/Position:</label>
-          <input type="text" id="title" name="title" pattern="[A-Za-z\\-]{17,}" required>
-
-          <label for="email">Email Address:</label>
-          <input type="email" id="email" name="email" required placeholder="example@emai;.com">
-
-          <label for="phone">Phone Number:</label>
-          <input type="tel" id="phone" name="phone" required>
-
-          <label for="organizationName">Organization Name</label>
-          <input type="text" id="organizationName" name="organizationName" required>
-
-          <label for="membershipLevel">Membership Level</label>
-          <select id="membershipLevel" name="membershipLevel">
-            <option value="np">NP membership</option>
-            <option value="bronze">Bronze Membership</option>
-            <option value="silver">Silver Membership</option>
-            <option value="gold">Gold Membership</option>
-          </select>
-
-          <label for="description">Description:</label>
-          <textarea id="description" name="desciption"></textarea>
-
-          <input type="hidden" id="timestamp" name="timestamp" value="2025-03-29T12:34:00">
-
-          <input type="submit" value="submit">
-        </form>
-        </div>
-     <div class="membership-benefits">
-            <h3>Membership Benefits</h3>
-            <ul>
-                <li><strong> NP Membership: </strong>Basic Updates and Training.</li>
-                <li><strong> Bronze Membership: </strong>Event discounts and Quarterly Newsletters.</li>
-                <li><strong> Silver Membership: </strong>Access to Training and Special Events.</li>
-                <li><strong> Gold Membership: </strong>Priority Advertising and Spotlight.</li>
-            </ul>
-        </div>
-    </main>
-     <footer>
-        <p>©️ copy <span id="year"></span>  😊 Evangelis Albesa WDD 230😊 Chamber of Commerce,Canada. All right reserved</p>
-        <p>Last Modified: <span id="last-modified"></span></p>
-     </footer>
+ <nav>
+   <div class="ham-menu">
+     <span></span>
+     <span></span>
+     <span></span>
+   </div>
+ </nav>
+   <main>
+    <div class="form-container">
+        <form method="get" action="thankyou.html">
+           <label for="firstName">First Name:</label>
+           <input type="text" id="firstName" name="firstName" required>
+ 
+           <label for="LastName">Last Name:</label>
+           <input type="text" id="LastName" name="LastName" required>
+ 
+           <label for="title">Title/Position:</label>
+           <input type="text" id="title" name="title" pattern="[A-Za-z\\-]{17,}" required>
+ 
+           <label for="email">Email Address:</label>
+           <input type="email" id="email" name="email" required placeholder="example@emai;.com">
+ 
+           <label for="phone">Phone Number:</label>
+           <input type="tel" id="phone" name="phone" required>
+ 
+           <label for="organizationName">Organization Name</label>
+           <input type="text" id="organizationName" name="organizationName" required>
+ 
+           <label for="membershipLevel">Membership Level</label>
+           <select id="membershipLevel" name="membershipLevel">
+             <option value="np">NP membership</option>
+             <option value="bronze">Bronze Membership</option>
+             <option value="silver">Silver Membership</option>
+             <option value="gold">Gold Membership</option>
+           </select>
+ 
+           <label for="description">Description:</label>
+           <textarea id="description" name="desciption"></textarea>
+ 
+           <input type="hidden" id="timestamp" name="timestamp" value="2025-03-29T12:34:00">
+ 
+           <input type="submit" value="submit">
+         </form>
+         </div>
+      <div class="membership-benefits">
+             <h3>Membership Benefits</h3>
+             <ul>
+                 <li><strong> NP Membership: </strong>Basic Updates and Training.</li>
+                 <li><strong> Bronze Membership: </strong>Event discounts and Quarterly Newsletters.</li>
+                 <li><strong> Silver Membership: </strong>Access to Training and Special Events.</li>
+                 <li><strong> Gold Membership: </strong>Priority Advertising and Spotlight.</li>
+             </ul>
+         </div>
+   </main>
+   
+   <footer>
+       <p>& copy <span id="year"></span>  😊 Evangelis Albesa😊 Canada</p>
+       <p>Last Modified: <span id="last-modified"></span></p>
+   </footer>
 </body>
 </html>
+
+
+
