@@ -1,12 +1,32 @@
+document.getElementById("year").textContent = new Date ().getFullYear();
 
-const hamMenu = document.querySelector(".ham-menu");
+document.getElementById("last-modified").textContent = document.lastModified;
 
-const offScreenMenu = document.querySelector(".off-screen-menu");
 
-hamMenu.addEventListener("click", () => {
-  hamMenu.classList.toggle("active");
-  offScreenMenu.classList.toggle("active");
+const hamburger = document.querySelector('.hamburger-menu');
+const menu = document.querySelector('.menu');
+
+hamburger.addEventListener ('click', () => {
+  menu.style.display = menu.style.display === 'flex'? 'none': 'flex'; 
+}); 
+   
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+        menu.style.display = 'flex';
+    } else {
+        menu.style.display = 'none';
+    }
 });
+
+
+//const hamMenu = document.querySelector(".ham-menu"); 
+
+//const offScreenMenu = document.querySelector(".off-screen-menu");
+
+//hamMenu.addEventListener("click", () => {
+ // hamMenu.classList.toggle("active");
+ // offScreenMenu.classList.toggle("active");
+//});
 
 const darkModeToggle = document.querySelector('#dark-mode-toggle');
 const body = document.body;

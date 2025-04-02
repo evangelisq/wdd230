@@ -29,33 +29,31 @@
    <!---before <span class="header-name">Evangelis Albesa</span>-->
    <button id="dark-mode-toggle">🌙 Dark Mode</button> <!-- Step 7: Dark Mode Toggle -->
   </header>
-  <div class="off-screen-menu">
-   <ul>
-     <li><a href="index.html">Home</a></li>
-     <li><a href="index.html">Chamber</a></li>
-     <li><a href="chamber-site-plan.html">Site Plan</a></li>
-     <li><a href="form.html">Form</a></li>
-   </ul>
- </div>
-
- <nav>
-   <div class="ham-menu">
-     <span></span>
-     <span></span>
-     <span></span>
-   </div>
- </nav>
+  <nav class="navbar">
+    <button class="hamburger-menu" aria-label="Toggle navigation">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </button>
+    <ul class="menu">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Advocacy</a></li>
+        <li><a href="#">Program</a></li>
+        <li><a href="#">Resources</a></li>
+    </ul>
+  </nav>
    <main>
-     <div class=" hero-image">
-      <div class="hero-label">
-        <h1>Vancouver, British Columbia Temple</h1>
-      </div>
-       <picture>
+    <div class="hero-container">
+     
+       <picturee>
        <source srcset="images/temple-small.webp" media="(max-width:400px)">
        <source srcset="images/temple-medium.webp" media="(min-width: 960px)">
-       <img src="images/temple.webp" alt="Image of temple">
-       </picture>
-    </div>
+       <img src="images/temple.webp" alt="temple" class="hero-image">
+      </picturee>
+      <div class="hero-label">Vancouver, British Columbia Temple</div>
+      </div>
+   
      <div class="grid-container">
        <section class="activities">
           <h2>Learning Activities</h2>
