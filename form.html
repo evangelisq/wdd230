@@ -54,21 +54,38 @@
          <label for="users">Username</label>
          <input type="text" id="users" name="username" required>
 
-         <label for="pwd">Password</label>
+         <!--<label for="pwd">Password</label>
          <input 
          type="password"
          id="pwd"
          name="password" 
          pattern="[a-zA-Z0-9]{8,}"
          title="Password must be at least 8 characters long and contain only letters and numbers" required>
+         <div class="password-container">
+            <label for="password1">Password:</label>
+            <input type="password" id="password1" class="password-field" required><br>
+            
+            <label for="password2">Confirm Password:</label>
+            <input type="password" id="password2" class="password-field" required> <br>
 
-         <label for="confirmPassword">Confirm Password</label>
+            <span id="errorMessage" class="error-message" style="color:red; font-size:small;"></span> <br>
+            <button id="submitBtn">Submit Button</button>
+            <label for="confirmPassword">Confirm Password</label>
+           
+         </div> -->
+
+         <!--<label for="confirmPassword">Confirm Password</label>
          <input 
          type="password" id="confirmPassword" 
-         name="confirm-password" required>
+         name="confirm-password" required>-->
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required minlength="8" pattern="[A-Za-z0-9]{8,}">
 
-         <span id="errorMessage"></span>
-
+            <label for="password2">Retype Password</label>
+            <input type="password" id="password2" name="password2" required minlength="8" pattern="[A-Za-z0-9]{8,}">
+            <p id="errorMessage" style="color:red; display:none;" >Password do not match</p>
+         
+         
          <label for="email">Email</label>
          <input type="email" 
          id="email" 

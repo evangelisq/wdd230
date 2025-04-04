@@ -19,15 +19,6 @@ window.addEventListener('resize', () => {
 });
 
 
-//const hamMenu = document.querySelector(".ham-menu"); 
-
-//const offScreenMenu = document.querySelector(".off-screen-menu");
-
-//hamMenu.addEventListener("click", () => {
- // hamMenu.classList.toggle("active");
- // offScreenMenu.classList.toggle("active");
-//});
-
 const darkModeToggle = document.querySelector('#dark-mode-toggle');
 const body = document.body;
 
@@ -35,6 +26,26 @@ darkModeToggle.addEventListener('click', () => {
     body.classList.toggle('dark-mode'); // Toggles dark mode
     darkModeToggle.textContent = body.classList.contains('dark-mode') ? '☀ Light Mode' : '🌙 Dark Mode';
 });
+const apiKey = '8973244265f4627b35b9d0608c7e6f57';
+const city = 'Langley, CA';
+const apiUrl = `https://home.openweathermap.org/api_keys`;
+
+async function fetchWeather() {
+    try {
+        const response = await fetch (apiUrl);
+        const data = await response.json();
+
+        document.getElementById('weather-description').textContent = data.weather[0].description;
+
+        let visits = localStorage.getItem('visits') || 0;
+            visits++;
+            document.getElementById('visit-counter').textContent = visits;
+            localStorage.setItem('visits', visits);
+    } catch (error) {
+        console.error('Error fetching weather data:', error);
+    }
+}
+
 
 const visitCounterElement = document.getElementById('visit-counter');
 let visitCount = localStorage.getItem('visitCount');
