@@ -1,3 +1,25 @@
 {
-    "weeks": "Week 1"
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "HG Layout"
+                },
+                {
+                    "url": "week01/media-queryl.html",
+                    "title": "mQueries"
+                }
+            ]
+        },
+        {
+            "wee": "Week 2",
+            "link": [
+                {
+                    "url": "week02/holygrail.html"
+                }
+            ]
+        }
+    ]
 }
