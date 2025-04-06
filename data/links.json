@@ -14,10 +14,70 @@
             ]
         },
         {
-            "wee": "Week 2",
+            "week": "Week 2",
             "link": [
                 {
-                    "url": "week02/holygrail.html"
+                    "url": "week02/design.html",
+                    "title": "Design"
+                },
+                {
+                    "url": "week02/hamburger.html",
+                    "title": "Menu"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "BOM-25"              
+                }
+            ]
+        },
+        {
+            "week":"Week 3",
+            "link": [
+                {
+                    "url":"week03/webp.html",
+                     "title": "WebP"
+                },
+                {
+                    "url": "week03/lazy.html",
+                    "title": "Lazy"
+                },
+                {
+                    "url": "week03/local.html",
+                    "title": "Local"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "link": [
+                {
+                    "url": "week04/codepen.html",
+                    "title": "CodePen"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "Table Build"
+                },
+                {
+                    "url": "week04/join.html",
+                    "title": "Join"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "link": [
+                {
+                    "url": "week05/xxxxxx.html",
+                    "title": "xxxx"
+                },
+                {
+                    "url": "week05/xxxxxx.html",
+                    "title": "xxxx"
+                },
+                {
+                    "url": "week05/xxxxxx.html", 
+                    "title": "xxxx"               
                 }
             ]
         }
