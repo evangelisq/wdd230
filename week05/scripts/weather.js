@@ -1,26 +1,38 @@
-const myTown = document.querySelector('#town');
-const myDescription = document.querySelector('#description');
-const myTemperature =document.querySelector('#temperature');
-const myGraphic = document.querySelector('#graphic');
+const currentTemp = document.querySelector('#current-tempt');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
 
-const myKey = "8973244265f4627b35b9d0608c7e6f57"
-const myLat = "49.1042° N"
-const myLong =  "122.6604° W"
+// Construct the API URL
+const url = "https://api.openweathermap.org/data/2.5/weather?lat=49.7499&lon=6.6371&units=imperial&appid=8973244265f4627b35b9d0608c7e6f57";
 
-const myURL = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&appid=${myKey}`
-
+// Fetch weather data
 async function apiFetch() {
-    try {
-      const response = await fetch(myURL);
-      if (response.ok) {
-        const data = await response.json();
+    fetch(url)
+    .then((response) =>{
+        if(response.ok) {
+            return response.json();
+        }
+        throw new Error('Error fetching data');
+    })
+    .then((data) =>{
         console.log(data);
-      } else {
-        throw Error(await response.text());
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  }
+        displayResults(data);
+    })
+    .catch(error => {
+        console.srroe('Error', error);
+    });
+}
+// Display the fetched data
+function displayResults (data) {
+    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
 
-apiFetch();
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    let desc = data.weather[0].description;
+
+    weatherIcon.setAttribute('src', iconsrc);
+    weather.setAttribute('alt', desc);
+
+    captionDesc.textContent = desc;
+}
+   
+ apiFetch();
