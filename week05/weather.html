@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
-    <link rel="stylesheet" href="scripts/weather.js" defer>
+    <script src="scripts/weather.js" defer></script>
     <link rel="stylesheet" href="styles/weather.css">
 </head>
 <body>
   <h1>OpenWeatherMap.org API Test</h1>
   <main>
-    <p>The current temperature in Triest, Germany is <span id="current-temp"></span></p>
+    <p>The current temperature in Trier, Germany is <span id="current-temp"></span></p>
     <figure>
-        <img id="weather-icon" src="" alt="">
+        <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="clear sky">
         <figcaption></figcaption>
     </figure>
   </main>
   <footer>
     Evangelis Albesa | OpenWeatherMap.org | CC BY-SA 4.0
+    <p>@ copy <span id="year"></span>  😊 Evangelis Albesa😊 Canada</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
   </footer>
 </body>
 </html>

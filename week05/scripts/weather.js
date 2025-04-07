@@ -1,38 +1,49 @@
-const currentTemp = document.querySelector('#current-tempt');
+const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
 // Construct the API URL
-const url = "https://api.openweathermap.org/data/2.5/weather?lat=49.7499&lon=6.6371&units=imperial&appid=8973244265f4627b35b9d0608c7e6f57";
+const apiKey = '38eb7dc3582098eac410b844b50a0b97';
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.7499&lon=6.6371&units=imperial&appid=' + apiKey;
 
 // Fetch weather data
-async function apiFetch() {
+function apiFetch() {
+    console.log(url);
     fetch(url)
-    .then((response) =>{
-        if(response.ok) {
+       .then((response) =>{
+        console.log('Response status:', response.status);
+          if(response.ok) {
             return response.json();
         }
-        throw new Error('Error fetching data');
+
+        throw new Error('Failed to fetch weather data');
     })
     .then((data) =>{
-        console.log(data);
+        console.log('Fetch data:', data);
         displayResults(data);
     })
-    .catch(error => {
-        console.srroe('Error', error);
+    .catch((error) => {
+        console.error('Error', error);
     });
 }
 // Display the fetched data
 function displayResults (data) {
+    console.log('Temperature:', data.main.temp);
+    console.log('Icon', data.weather[0].icon);
+    console.log('Description:', data.weather[0].description);
+
     currentTemp.innerHTML = `${data.main.temp}&deg;F`;
 
-    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-    let desc = data.weather[0].description;
+    const iconSrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    const desc = data.weather[0].description;
 
-    weatherIcon.setAttribute('src', iconsrc);
-    weather.setAttribute('alt', desc);
+    weatherIcon.setAttribute('src', iconSrc);
+    weatherIcon.setAttribute('alt', desc);
 
-    captionDesc.textContent = desc;
-}
-   
- apiFetch();
+    captionDesc.textContent = `${desc}`;
+} 
+apiFetch();
+
+ document.getElementById("year").textContent = new Date ().getFullYear();
+
+document.getElementById("last-modified").textContent = document.lastModified;
