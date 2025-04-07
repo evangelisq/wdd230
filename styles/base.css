@@ -280,7 +280,7 @@ h2 {
 }
 
 .week01, .week02, .week03, 
-.week04 {
+.week04, .week05 {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -289,11 +289,11 @@ h2 {
     gap: 15px;
 }
 .week01 li a, .week03 li a, .week02 li a, 
-.week04 li a {
+.week04 li a, .week05 li a {
     overflow: hidden;
 }
 .week01 li,  .week03 li, 
-.week04 li {
+.week04 li, .week05 li {
     padding: 10px 20px;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -303,7 +303,7 @@ h2 {
     min-width: 120px;
 }
 .week01 li a, .week03 li a, 
-.week04 li a{
+.week04 li a, .week05 li a{
     text-decoration: none;
     font-weight: bold;
     
