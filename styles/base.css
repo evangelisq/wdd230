@@ -92,7 +92,6 @@ body {
 }
 .top-nav {
     display: flex;
-    align-items: left;
     justify-content: space-between;
     background: #00539c;
     padding: 10px 15px;
@@ -100,7 +99,7 @@ body {
 }
 .navbar {
     display: flex;
-    align-items: left;
+  
     justify-content: space-between;
     background: #00539c;
     padding: 10px 15px;
@@ -118,16 +117,15 @@ body {
     display: block;
 }
 .hero-label {
-    position: absolute;
+    position: flex;
     top:20px;
     left: 20px;
-    background-color: #000052;
+    background-color:  #083D77;;
     color: #ffffff;
     padding: 10px 15px;
     font-size: 1.2rem;
-    border-radius: 5px;
-    border-radius: 8px;
-    text-shadow: #FFFFFF;
+    text-shadow: #FFF;
+    text-align: center;
 }
 .menu-toggle {
     display: none;
