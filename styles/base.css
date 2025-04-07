@@ -117,14 +117,13 @@ body {
     display: block;
 }
 .hero-label {
-    position: flex;
+   display: flex;
     top:20px;
     left: 20px;
     background-color:  #083D77;;
     color: #ffffff;
     padding: 10px 15px;
     font-size: 1.2rem;
-    text-shadow: #FFF;
     text-align: center;
 }
 .menu-toggle {
