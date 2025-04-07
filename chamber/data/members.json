@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Jollibee",
+        "address": "12047 72 Ave, Surrey, BC V3W 2M1",
+        "phone": "(778) 728-1640",
+        "website": "https://locations.jollibeefoods.com",
+        "image": "jollibee.jpeg",
+        "membership_level": "Silver",
+        "additional_info": "Trusted and affordable"
+    },
+    {
+        "name": "McDonald",
+        "address": "20390 88 Ave, Langley Twp, BC V1M 2Y4",
+        "phone": "(604) 881-6220",
+        "website": "https://www.mcdonalds.com",
+        "image": "mcdonald.jpeg",
+        "membership_level": "Bronze",
+        "additional_info": "Friendly crews"
+    },
+    {
+        "name": "A & W",
+        "address": "8790 204 St, Langley Twp, BC V1M 2Y5",
+        "phone": "Phone: (604) 513-8788",
+        "website": "https://web.aw.ca/en/home",
+        "image": "a_&_W.jpeg",
+        "membership_level": "Regular",
+        "additional_info": "Fast service"
+    },
+    {
+        "name": "Wendys",
+        "address": "8590 200 St Unit C, Langley Twp, BC V2Y 2B9",
+        "phone": " (604) 513-4227",
+        "website": "https://locations.wendys.com/",
+        "image": "wendys.jpeg",
+        "membership_level": "Regular",
+        "additional_info": "Always fresh"
+    },
+    {
+        "name": "Tim Hortons",
+        "address": "20159 88 Ave Unit H101, Langley Twp, BC V1M 0B4",
+        "phone": "(604) 513-4449",
+        "website": "https://locations.timhortons.ca/",
+        "image": "timhortons.jpeg",
+        "membership_level": "Silver",
+        "additional_info": "Fresh Canadian Restaurant"
+    },
+    {
+        "name": "Popeyes",
+        "address": "20178 96 Ave C100, Langley Twp, BC V1M 0B2",
+        "phone": " (604) 371-4352",
+        "website": "https://www.popeyeschicken.ca",
+        "image": "popeyes.jpeg",
+        "membership_level": "Regular",
+        "additional_info": "Deliciously cook and serve hot"
+    },
+    {
+        "name": "KFC",
+        "address": " 20185 88 Ave, Langley Twp, BC V1M 2N9",
+        "phone": " (604) 882-5988",
+        "website": "https://www.kfc.ca",
+        "image": "kfc.jpeg",
+        "membership_level":"Silver",
+        "additional_info": "Affordable price"
+    },
+    {
+        "name": "DQ",
+        "address": "20177 88 Ave E #2, Langley Twp, BC V1M 2N9",
+        "phone": "(604) 882-3559 ",
+        "website": "https://www.dairyqueen.com/",
+        "image": "dq.jpeg",
+        "membership_level": "Regular",
+        "additional_info": "There mare affordable choices"
+    }
+]
