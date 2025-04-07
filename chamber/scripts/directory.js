@@ -1,6 +1,6 @@
 fetch('data/members.json')
-.then(response => response.json())
-.then(data =>{
+.then(response => response.json()) 
+.then(data => {
     const container = document.getElementById('members-container');
      data.forEach(member => {
         const memberCard = `<div class = "member-card">
@@ -26,6 +26,7 @@ function toogleView(viewType) {
         container.classList.add('list-view');
     }
 }
+
 
 document.getElementById("year").textContent = new Date ().getFullYear();
 
