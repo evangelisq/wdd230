@@ -1,20 +1,87 @@
-.member {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin: 10px;
+div {
     text-align: center;
+    margin-top: 20px;
 }
-.member img {
-    max-width: 100px;
-    height: auto;
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
 }
-/* Grid view */
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+/* style for container */
+#members-containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Grid View */
 .grid-view .member {
-    display:inline-block;
-    width: 30%;
+    display: inline-block;
+    width: calc(33.333% - 20px); /* 3 items per row */
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-/* List view */ 
+.grid-view .member:hover {
+    transform: translate(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+/* List view */
 .list-view .member {
-    display: block;
+    display: flex;
     width: 100%;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.list-view .member img {
+    margin-right: 20px;
+    border-radius: 50%;
+}
+/*  Member styles */
+.member img {
+   max-width: 100px;
+   height: auto;
+   margin-bottom: 10px;
+   border-radius: 10px;
+   transition: transform 0.3s ease;
+}
+.member img:hover {
+    transform: scale(1.1);
+}
+.member h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #2c3e50;
+}
+.member p {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+.member a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.member a:hover {
+    color: #2980b9;
 }
