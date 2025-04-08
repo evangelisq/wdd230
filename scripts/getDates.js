@@ -14,7 +14,7 @@ window.addEventListener('resize', () => {
     if (window.innerWidth >= 768) {
         menu.style.display = 'flex';
     } else {
-        menu.style.display = 'none';
+        cmenu.style.display = 'none';
     }
 });
 

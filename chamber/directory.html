@@ -18,13 +18,14 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/normalize.css">
-    <script src="scripts/directory.js" defer></script>
     <link rel="stylesheet" href="styles/directory.css">
+    <script src="scripts/directory.js" defer></script>
+   
 </head>
 <body>
   <header class="header">
    <div class="profile">
-     <img src="images/profile.jpg" alt="Profile image">
+     <img src="images/myself.webp" alt="Profile image">
      <h1>Evangelis Albesa</h1>
 </div>
   
@@ -49,6 +50,8 @@
        <div>
         <button onclick="toggleView('grid')">Grid View</button>
         <button onclick="toggleView('list')">List View</button>
+        <button onclick="toggleView('wide-grid')">Wider Grid View</button>
+        <button onclick="toggleView('zebra-list')">Zebra List View</button>
        </div>
        <div id="members-containers" class="grid-view"></div>
    </main>
