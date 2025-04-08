@@ -22,10 +22,12 @@ fetch('data/members.json')
 
 function toggleView(viewType) {
     const container = document.getElementById('members-containers');
+  
     if (viewType  == 'grid'){
         container.classList.remove('list-view');
-        contaier.classList.add('grid-view');
-    } else {
+        container.classList.add('grid-view');
+        console.log('Switched to Grid View');
+    } else  if (viewType =='list'){
         container.classList.remove('grid-view');
         container.classList.add('list-view');
     }

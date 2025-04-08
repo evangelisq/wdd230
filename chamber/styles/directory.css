@@ -2,10 +2,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: $f9f9f9;
+    background-color: #f9f9f9;
     color: #333;
 }
 div {
+   
     text-align: center;
     margin-top: 20px;
 }
@@ -24,6 +25,7 @@ button:hover {
     background-color: #2980b9;
     transform: scale(1.05);
 }
+
 /* style for container */
 #members-containers {
     display: flex;
@@ -38,13 +40,21 @@ button:hover {
 /* Grid View */
 .grid-view .member {
     display: inline-block;
-    width: calc(33.333% - 20px); /* 3 items per row */
+    width: calc(25% - 20px);
+    margin: 10px;
+    text-align: center;
     background-color: #fff;
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+/*.grid-view .member img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}*/
 .grid-view .member:hover {
     transform: translate(-5px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
@@ -53,23 +63,32 @@ button:hover {
 .list-view .member {
     display: flex;
     width: 100%;
+   /* margin: 10px 0;*/
     align-items: center;
+    margin-bottom: 10px;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .list-view .member img {
+   /* width: 80px;
+    height: auto;*/
     margin-right: 20px;
-    border-radius: 50%;
+    border-radius: 10px;
 }
 /*  Member styles */
 .member img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+
    max-width: 100px;
-   height: auto;
-   margin-bottom: 10px;
-   border-radius: 150%;
-   transition: transform 0.3s ease;
+  /* height: auto;*/
+   border-radius: 10px;
 }
 .member img:hover {
     transform: scale(1.1);
@@ -82,6 +101,7 @@ button:hover {
 .member p {
     font-size: 0.9rem;
     color: #7f8c8d;
+    margin: 5px 0;
 }
 .member a {
     color: #3498db;
@@ -91,4 +111,23 @@ button:hover {
 }
 .member a:hover {
     color: #2980b9;
+}
+
+@media (max-width: 768px) {
+    .grid-view .member {
+        width: calc(50%-20px);
+    }
+}
+@media (max-width: 480px){
+    .grid-view .member {
+        width: 100%;
+    }
+    .list-view .member {
+        flex-direction: column;
+        text-align: center;
+    }
+    .list-view .member img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
 }
