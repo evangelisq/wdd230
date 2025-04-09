@@ -23,7 +23,7 @@
         "phone": "Phone: (604) 513-8788",
         "website": "https://web.aw.ca/en/home",
         "image": "images/a_&_w.jpg",
-        "membership_level": "Regular",
+        "membership_level": "Gold",
         "additional_info": "Fast service"
     },
     {
@@ -32,7 +32,7 @@
         "phone": " (604) 513-4227",
         "website": "https://locations.wendys.com/",
         "image": "images/wendys.jpg",
-        "membership_level": "Regular",
+        "membership_level": "Gold",
         "additional_info": "Always fresh"
     },
     {
@@ -50,7 +50,7 @@
         "phone": " (604) 371-4352",
         "website": "https://www.popeyeschicken.ca",
         "image": "images/popeyes.jpg",
-        "membership_level": "Regular",
+        "membership_level": "Gold",
         "additional_info": "Deliciously cook and serve hot"
     },
     {
@@ -68,7 +68,7 @@
         "phone": "(604) 882-3559 ",
         "website": "https://www.dairyqueen.com/",
         "image": "images/dq.jpg",
-        "membership_level": "Regular",
+        "membership_level": "Gold",
         "additional_info": "There mare affordable choices"
     }
 ]
