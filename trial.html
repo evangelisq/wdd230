@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whitewater Rafting Escapade</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles/trial.css">
-    <link rel="stylesheet" href="scripts/trial.js">
+    <script src="scripts/trial.js" defer></script>
 </head>
-
 <body>
-    
-        <main>
-            <h1 style = "text-align: center;">Weather App</h1>
-            <input type="text" id = "locationInput"
-            placeholder = "Enter a City" style = "display: block; margin: 0 auto;">
-            <button onclick = "getWeather()" style = "display: block; margin: 0 auto;">Get Weather</button>
-            <div id = "weatherDisplay" style = "text-align: center;"></div>
-        </main>
-       
- </body>
+    <main>
+        <div id="weather-section">
+            <h2>Current Weather</h2>
+            <p id="current-temp">Loading...</p>
+            <p id="current-desc">Loading...</p>
+            
+            <h2>3-Day Forecast</h2>
+            <div id="forecast"></div>
+          </div>
+          
+    </main> 
+    <footer>
+        <p>@ copy <span id="year"></span>  😊 Evangelis Albesa😊 Canada</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
 </html>
-   
