@@ -104,23 +104,3 @@ fetch(forecastUrl)
     document.querySelector('forecast').innerHTML = '<li>Location access denied. Unable to fetch weather data.</li>';
 });
 
-fetch('members.json')
-.then(response => response.json())
-.then(data => {
-    const spotlightMembers = data.filter(member => 
-        member.membershipLevel == "Gold" || member.membershipLevel == "Silver"
-    );
-    // Randomly select 2-3 members
-    const randomMembers = spotlightMembers.sort(() => 0.5 - Math.random()).slice(0,3);
-
-    const container = document.getElementById('spotlight-container');
-    randomMembers.forEach(member => {
-        const ad = document.createElement('div');
-        ad.innerHTML = `
-        <img src="${member.imageUrl}" alt="${member.name}">
-        <h3>${member.name}</h3>
-        <a href="${member.website}" target="_blank">Visit Website</a>`;
-        container.appendChild(ad);
-    });
-});
-

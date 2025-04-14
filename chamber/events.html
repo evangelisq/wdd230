@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/events.js" defer></script>
 </head>
 <body>
     <header>
@@ -42,52 +42,21 @@
             </ul>
         </nav>
     </header>
-
-    <main>
-        <div id="banner" class="banner" style="display:none;">
-            <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7 PM</p>
-            <button id="close-banner">Close</button>
+    <section id="hero-btn">
+        <h1>We</h1>
+    </section>
+    <!--Spotlight Ads section-->
+    <section id="spotlight-section">
+        <h2>Spotlight Members</h2>
+        <div id="spotlight-ads"></div>
+    </section>
+    <!--Benefits Model-->
+    <div id="benefits-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times</span>
+            <h2>Benefits Plan</h2>
+            <p>Details about the benefits plan offered by the Chamber of Commerce</p>
         </div>
-
-        <section class="hero">
-            <img src="images/langleycity1.jpg" alt="business2" class="hero-image">
-            <h1>Langley Chamber of Commerce</h1>
-
-            <div class="hero-buttons">
-             <button>Connect <span>Find a Business</span></button>
-             <button>Join the Chamber</button>
-             <button id="upcoming-events-btn">Upcoming Events</button>
-             <button>Benefits Plan</button>
-            </div>
-        </section>
-        <section id="spotlight-section">
-            <h2>SpotlightMembers</h2>
-            <div id="spotlight-ads"></div>
-
-        </section>
-
-        <section class="tagline">
-            <p>CONNECTING, SUPPORTING, AND ADVOCATING FOR LANGLEY BUSINESS.</p>
-        </section>
-
-        <section class="content">
-            <img src="images/langley2.jpg" alt="business">
-            <p>The Greater Langley Chamber of Commerce is one of the largest and most active business association in the region,
-                representing over 1,100 member businesses. Established in 1931, it has been a cornerstone for supporting connecting,
-                and advocating for the Langley business community for over 90 years. The Chamber provides resources, networking oppotunities,
-                and advocacy efforts to help business thrive. It also offers to help busnesses thrive. It also offers programs, events, and initiatives to foster collaborationand growth within the community.
-            </p>
-        </section>
-
-        <section class="spotlight">
-            <h2>Spotlight Advertisements</h2>
-            <div id="spotlight-container"></div>
-
-        </section>
-    </main>
-     <footer>
-        <p>©️ copy <span id="year"></span>  😊 Evangelis Albesa WDD 230😊 Chamber of Commerce,Canada. All right reserved</p>
-        <p>Last Modified: <span id="last-modified"></span></p>
-     </footer>
+    </div>
 </body>
 </html>
