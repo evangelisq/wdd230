@@ -188,15 +188,16 @@ header button {
     margin: 0;
 }
 /* Conditional banner*/
-.banner {
+#banner {
     background-color: #f4a261;
     color: white;
     text-align: center;
     padding: 16px;
     position: relative;
     font-size: 16px;
+    display: none;
 }
-.banner button {
+#banner button {
     position: absolute;
     top: 5px;
     right: 10px;
@@ -206,15 +207,15 @@ header button {
     cursor: pointer;
     border-radius: 3px;
 }
-.banner button:hover {
+#banner button:hover {
     background-color: #2a9d8f;
 }
-#spotlight-section {
+.spotlight-section {
     padding: 20px;
     background-color: #f9f9f9;
     text-align: center;
 }
-#spotlight-section  h2{
+.spotlight-section  h2{
     font-size: 24px;
     color: #333;
     margin-top: 20px;
@@ -225,6 +226,11 @@ header button {
     flex-wrap: wrap;
     justify-content: center;
 }
+#spotlight-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
 .spotlight-card {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -234,7 +240,8 @@ header button {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s;
-}.spotlight-card:hover {
+}
+.spotlight-card:hover {
     transform: scale(1.05);
 }
 .spotlight-card img {
@@ -253,10 +260,7 @@ header button {
     margin: 5px 0;
 }
 .spotlight-card a {
-    display: inline-block;
-    margin-top: 10px;
     color: #007acc;
-    text-decoration: none;
     text-decoration: none;
     font-weight: bold;
 }
@@ -264,14 +268,7 @@ header button {
     text-decoration: underline;
     color: #005f99;
 }
-button {
-    padding: 10px 20px;
-    margin: 10px;
-    background-color: #264653;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
+
 footer {
     background-color: #083D77;
     text-align: center;
@@ -282,8 +279,8 @@ footer p {
     font-size: 14px;
     color: #FFFFFF;
 }
-@media (max-width: 600px) {
-    .spotlight-ads {
+@media (max-width: 768px) {
+    #spotlight-ads {
         flex-direction: column;
     }
     .spotlight-card {
