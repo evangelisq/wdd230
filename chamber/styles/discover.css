@@ -198,24 +198,7 @@ h1, h2, h3 {
 p {
     color: #555;
 }
-/*h1 {
-    font-weight: 400;
-    font-family:cursive; /*before san serif 
-    color: #fff; /* before no color
-    font-size: 50px; /* before it was san-serif to cursive 
-}
 
-h3 {
-   color: #112A46;
-   margin-bottom: 10px;
-}
-h2 {
-    background-color:  #083D77;
-    color: #fff;
-    font-size: 35px;
-    margin-right: 0;
-    text-align: center;
-}*/
 
 .grid-container {
     display: grid;
@@ -225,82 +208,7 @@ h2 {
     margin: 0 auto;
 
 }
-/*.activities h3 {
-   margin-top: 20px;
-}
 
-.week01, .week03 {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 20px 0;
-    gap: 15px;
-}
-.week03 li a {
-    overflow: hidden;
-}
-.week01 li, .week03 li {
-    padding: 10px 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    flex: 1;
-    min-width: 120px;
-}
-.week01 li a, .week03 li a{
-    text-decoration: none;
-    font-weight: bold;
-    
-}
-.week01 li,  .week03 li a:hover {
-    text-decoration: underline;
-}
-.week02 {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 20px 0;
-    gap: 15px;
-    
-}
-.week02 li {
-    padding: 10px 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    flex: 1;
-    min-width: 120px;
-}
-.week02 li a {
-    text-decoration: none;
-    font-weight: bold;
-
-    white-space: normal;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    max-width: 100%;
-    margin: 0 auto;
-    font-size: 1.5rem;
-}
-.week02 li a:hover {
-    text-decoration: underline;
-}
-/*.info, .activities {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.info p {
-    margin: 10px 0;
-    text-align: center;
-}*/
 footer {
     background-color: #083D77;
     text-align: center;
@@ -411,22 +319,7 @@ In most WDD courses there is a requirement to use a separate file. This part wou
     text-align: center;
   }
 }
-/*@media (min-width:768px) {
-    .hero-image img {
-        max-width: 100%;
-        object-fit: cover;
-    }
-    .hero-label {
-        font-size: 1.8rem;
-        left: 10px;
-    }
-    .hero-image{
-        height: 300px;
-    }
-    .grid-container{
-        grid-template-columns: 2fr 1fr;
-    }
-}*/
+
 @media screen and (max-width: 600px) {
       .grid-container {
         grid-template-columns: 1fr;
