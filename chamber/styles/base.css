@@ -192,31 +192,50 @@ h4 {
 }
 /* Conditional banner*/
 #banner {
-    background-color: #007acc ;
+    background-color: #004466;
     color: white;
     text-align: center;
-    padding: 16px;
+    padding: 20px;
     position: relative;
-    font-size: 20px;
+    font-size: 15px;
     display: none;
 }
 #banner button {
-    padding: 8px 15px;
+    padding: 8px 8px;
     position: absolute;
-    top: 10px;
+    top: 10%;
     right: 15px;
-    background:  linear-gradient(90deg, #ffaa00, #ff8800);
+    transform: translate((-50%));
+    background-color: #ffaa00;
     color: #111111;
     cursor: pointer;
-    border-radius: 8px;
-    font-weight: bold;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 6px;
+   font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 #banner button:hover {
     transform: scale(1.1);
-    background: linear-gradient(90deg, #ff7700, #ff5500);
+    background: #f88500;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.7);
+}
+#banner p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffcc00;
+    text-align: center;
+    margin: 10px auto;
+    padding: 5px 10px;
+    background-color: #004466;
+    border: 2px solid #ffaa00;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, background-color 0.3ss ease;
+}
+#banner p:hover {
+    transform: scale(1.05);
+    background-color: #00539c;
+    color: #ffffff;
 }
 @keyframes fadeIn {
     from {
