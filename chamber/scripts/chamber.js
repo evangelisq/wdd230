@@ -118,15 +118,6 @@ function displaySpotlightAds(members) {
     });
 }
 
-f//etch("./chamber/data/members.json")
-    //.then(response => {
-   //     console.log("Response status:", response.status);
-   //     return response.json();
-  //  })
-  //  .then(data => console.log("Data:", data))
-   // .catch(error => console.error("Error fetching data:", error)); 
-
-
 document.getElementById("year").textContent = new Date ().getFullYear();
 
 document.getElementById("last-modified").textContent = document.lastModified;
