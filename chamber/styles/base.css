@@ -283,4 +283,7 @@ footer p {
         width: 100%;
         margin: 0 auto;
     }
+    .spotlight-ad h3 {
+        font-size: 1.2rem;
+    }
 }
