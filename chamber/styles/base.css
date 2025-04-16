@@ -71,6 +71,7 @@ h3 {
 }
 .menu li a:hover {
     background: #004080;
+    border-radius: 5px;
 }
 .top-nav {
     display: flex;
