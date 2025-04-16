@@ -276,6 +276,11 @@ footer p {
     }
     .spotlight-card {
         width: 90%;
+        gap: 10px;
+        padding: 10px;
+    }
+    .spotlight-ad {
+        width: 100%;
         margin: 0 auto;
     }
 }
