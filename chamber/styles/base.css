@@ -25,6 +25,7 @@ header button {
     padding: 0.5rem 1rem;
     font-weight: bold;
     cursor: pointer;
+    border-radius: 5px;
 }
 h3 {
     font-size: 25px;
