@@ -112,6 +112,7 @@ function displaySpotlightAds(members) {
             <h3>${member.name}</h3>
             <p>${member.address}</p>
             <a href="${member.website}" target="_blank">Visit Website</a>
+            <p>${member.membership_level}</p>
             <p>${member.additional_info}</p>
         `;
         spotlightContainer.appendChild(ad);
