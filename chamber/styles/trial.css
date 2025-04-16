@@ -1,0 +1,20 @@
+#spotlight-ads {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.spotlight-ad {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+.spotlight-ad img {
+    border-radius: 10px;
+}
+h3 {
+    text-align: center;
+}
