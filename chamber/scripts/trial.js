@@ -31,3 +31,17 @@ function displaySpotlightAds(members) {
         spotlightContainer.appendChild(ad);
     });
 }
+document.addEventListener("DOMContentLoaded", function () {
+    const dayOfWeek = new Date().getDay(); // 0 = Sunday, 1 = Monday, etc.
+    const banner = document.getElementById("banner");
+
+    // Display the banner only on Monday (1), Tuesday (2), and Wednesday (3)
+    if (dayOfWeek >= 1 && dayOfWeek <= 3) {
+        banner.style.display = "block";
+    }
+
+    // Allow users to close the banner
+    document.getElementById("close-banner").addEventListener("click", function () {
+        banner.style.display = "none";
+    });
+});
