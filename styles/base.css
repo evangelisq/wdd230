@@ -8,19 +8,18 @@
 body {
     font-family: "Roboto", sans-serif;
     padding: 0;
-   /* margin: 0;*/
+    font-size: 16px;
+    line-height: 1.6;
     transition: background-color 0.3s, color 0.3s;
 }
 .header {
-   text-align: center;
-   /* width: 100%;
-    height: 250px;*/
+   text-align: center; 
     justify-content: center;
     display: flex;
    flex-direction: column;
     align-items: center;
     padding: 10px;
-    background-color: #112A46;
+    background-color: #083D77;
     color: white;
 }
 .header h1 {
@@ -89,6 +88,10 @@ body {
 }
 .menu li a:hover {
     background: #004080;
+}
+a:hover {
+    color: #083d77;
+    transition: color 0.3s ease-in-out;
 }
 .top-nav {
     display: flex;
@@ -196,8 +199,8 @@ nav {
     background-color: #555;
 }
 body.dark-mode {
-    background-color: #333;
-    color: white;
+    background-color: #1a1a1a;/*#333;*/
+    color: #eaeaea;/*white;*/
 }
 body.dark-mode header {
     background-color: #555;
@@ -206,6 +209,18 @@ body.dark-mode header {
 body.dark-mode .dark-mode-toggle {
     background-color: white;
     color: #333;
+}
+button#dark-mode-toggle {
+    background-color: #1c3d5a;
+    color: #fafafa;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+button#dark-mode-toggle:hover {
+    background-color: #00539c;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.2);
 }
 nav {
     background-color: #ace;
@@ -264,7 +279,9 @@ h2 {
     margin-right: 0;
     text-align: center;
 }
-
+h1, h2, h3 {
+    font-weight: 600;
+}
 .grid-container {
     display: grid;
     grid-template-columns:  1fr;
@@ -546,4 +563,12 @@ In most WDD courses there is a requirement to use a separate file. This part wou
     .grid-container{
         grid-template-columns: 2fr 1fr;
     }
+    header {
+        padding: 20px;
+    }
+    .menu {
+        width: 100%;
+        padding: 5px;
+    }
+   
 }
