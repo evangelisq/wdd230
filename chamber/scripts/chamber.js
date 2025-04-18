@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const banner = document.getElementById("banner");
 
     // Display the banner only on Monday (1), Tuesday (2), and Wednesday (3)
-    if (dayOfWeek >= 1 && dayOfWeek <= 3) {
+    if (dayOfWeek >= 0 && dayOfWeek <= 6) {
         banner.style.display = "block";
     }
 
