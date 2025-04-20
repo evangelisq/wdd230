@@ -1,10 +1,26 @@
-const hamMenu = document.querySelector(".ham-menu");
+//const hamMenu = document.querySelector(".ham-menu");
 
-const offScreenMenu = document.querySelector(".off-screen-menu");
+//const offScreenMenu = document.querySelector(".off-screen-menu");
 
-hamMenu.addEventListener("click", () => {
-  hamMenu.classList.toggle("active");
-  offScreenMenu.classList.toggle("active");
+//hamMenu.addEventListener("click", () => {
+  //hamMenu.classList.toggle("active");
+  //offScreenMenu.classList.toggle("active");
+//});
+
+
+const hamburger = document.querySelector('.hamburger-menu');
+const menu = document.querySelector('.menu');
+
+hamburger.addEventListener ('click', () => {
+  menu.style.display = menu.style.display === 'flex'? 'none': 'flex'; 
+}); 
+   
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+        menu.style.display = 'flex';
+    } else {
+        cmenu.style.display = 'none';
+    }
 });
 
 const darkModeToggle = document.querySelector('#dark-mode-toggle');
@@ -15,32 +31,9 @@ darkModeToggle.addEventListener('click', () => {
     darkModeToggle.textContent = body.classList.contains('dark-mode') ? '☀ Light Mode' : '🌙 Dark Mode';
 });
 
-//document.getElementById('password2').addEventListener('input', function(){
-  //  const password1 = document.getElementById('password1').value;
- //   const password2 = document.getElementById('password2').value;
-  //  const errorMessage = document.getElementById('errorMessage');
 
- //   if (password1 === password2) {
- //       errorMessage.tabIndex = 'Password do not match';
- //   }else {
-  //      errorMessage.textContent = '';
-  //  }
-//});
 
-//document.getElementById('submitBtn').addEventListener('click', function(){
-   // const password1 = document.getElementById('password1').value;
-   // const password2 = document.getAnimations('password2').value;
-    
-   // if (password1 === password2) {
-   //     alert('Passwords do not match. Please re-enter.');
 
-    //    document.getElementById('password1').value ='';
-    //    document.getElementById('password2').value = '';
-    //    document.getElementById('password1').focus();
-   // } else {
-  //      alert ('Password match! Proceeding...');
-  //  }
-//});
 function validateForm (){
     const passowrd = document.getElementById('password').value;
     const password2 =document.getElementById('password2').value;
