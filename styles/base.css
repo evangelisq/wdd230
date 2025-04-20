@@ -473,26 +473,33 @@ button .dark-mode-toggle {
 }
 .map-container {
    display: flex;
+   max-width: 800px;
    flex-direction: column;
    gap: 20px;
-   margin: 20px auto;
+   text-align: center;
+   justify-content: center;
+   padding: 1rem;
+   margin:  0 auto;/*20px auto;*/
  
    text-align: center;
 }
 .map-container img {
     width: 100%;
-    height: 500px;
+    height: auto;/*500px;*/
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     cursor: pointer;
-    transition: transform 0.3s ease;
-    display: inline-block;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3 ease-in-out;
+    /*display: inline-block;*/
 }
 .map-container img:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
-iframe {
+.map-container iframe {
     width: 100%;
-    height: 0;
+    height: 300px;
+    border: none;
+    margin: 1rem;
 }
 
 /* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.  

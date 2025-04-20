@@ -42,17 +42,21 @@ function trackPageVisits() {
     const pageVisitElement =document.getElementById('page-visits');
     pageVisitElement.textContent = `${visitCount} times`; 
 }
-
+if ('geolocation' in navigator) {
+    navigator.geolocation.getCurrentPosition((position) => {
+        con
+    })
+}
 // Fetch and display weather data
 navigator.geolocation.getCurrentPosition((position) => {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
-    //console.log(`Latitude: ${latitude}, longitude: ${longitude}`);
+    //  -- console.log(`Latitude: ${latitude}, longitude: ${longitude}`);
 
     const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
     const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
     
-    // Fecth current weather data
+    // --Fecth current weather data
     fetch(weatherUrl)
        .then(response => response.json())
        .then(data => {
