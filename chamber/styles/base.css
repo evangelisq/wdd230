@@ -77,7 +77,7 @@ h3 {
     display: flex;
     /*align-items: left;*/
     justify-content: space-between;
-    background: #00539c;
+   
     padding: 10px 15px;
     position: relative;
 }
@@ -85,7 +85,7 @@ h3 {
     display: flex;
     /*align-items: left;*/
     justify-content: space-between;
-    background: #00539c;
+    background: #112A46;/*#00539c;*/
     padding: 10px 15px;
     position: relative;
 }
