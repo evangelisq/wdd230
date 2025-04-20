@@ -48,7 +48,74 @@ body {
     flex-direction: column;
     cursor: pointer;
 }
-.off-screen-menu a {
+.hamburger {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.hamburger-menu {
+    display: flex;  
+    flex-direction: column;   
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+.hamburger-menu .line {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 4px 0;
+}
+.menu {
+    display: none;
+    flex-direction: column;
+    background: #00539c;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width: 180px;
+    z-index: 999;
+    border-radius: 5px;
+}
+.menu li {
+    text-align: left;
+    margin: 10px 0;
+}
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-size: 25px;
+}
+.menu li a:hover {
+    background: #004080;
+}
+a:hover {
+    color: #083d77;
+    transition: color 0.3s ease-in-out;
+}
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    background: #00539c;
+    padding: 10px 15px;
+    position: relative;
+}
+.navbar {
+    display: flex;
+  
+    justify-content: space-between;
+    background: #00539c;
+    padding: 10px 15px;
+    position: relative;
+}
+/*.off-screen-menu a {
     color:  white;
 }
 
@@ -98,7 +165,7 @@ nav {
     top: 50%;
     transform: translate(-50%, -50%);
     transition: .3s ease;
-}
+}*/
 #dark-mode-toggle {
     background-color: #333;
     color: white;

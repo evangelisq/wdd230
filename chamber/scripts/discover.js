@@ -1,12 +1,26 @@
 
-const hamMenu = document.querySelector(".ham-menu");
+const hamburger = document.querySelector('.hamburger-menu');
+const menu = document.querySelector('.menu');
 
-const offScreenMenu = document.querySelector(".off-screen-menu");
-
-hamMenu.addEventListener("click", () => {
-  hamMenu.classList.toggle("active");
-  offScreenMenu.classList.toggle("active");
+hamburger.addEventListener ('click', () => {
+  menu.style.display = menu.style.display === 'flex'? 'none': 'flex'; 
+}); 
+   
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+        menu.style.display = 'flex';
+    } else {
+        cmenu.style.display = 'none';
+    }
 });
+//const hamMenu = document.querySelector(".ham-menu");
+
+//const offScreenMenu = document.querySelector(".off-screen-menu");
+
+//hamMenu.addEventListener("click", () => {
+ // hamMenu.classList.toggle("active");
+ // offScreenMenu.classList.toggle("active");
+//});
 
 const darkModeToggle = document.querySelector('#dark-mode-toggle');
 const body = document.body;
