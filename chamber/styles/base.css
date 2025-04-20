@@ -10,7 +10,7 @@ body {
     background: #f9f9f9;
 }
 header {
-    background: #112A46 ;
+    background:  #083D77;/*#112A46 ;*/
     color: white;
     padding:  1rem;
 }
@@ -85,7 +85,7 @@ h3 {
     display: flex;
     /*align-items: left;*/
     justify-content: space-between;
-    background: #112A46;/*#00539c;*/
+    background:  #083D77;
     padding: 10px 15px;
     position: relative;
 }
@@ -198,7 +198,7 @@ h4 {
 }
 /* Conditional banner*/
 #banner {
-    background-color: #004466;
+    background-color: #007acc ;/*#004466;*/
     color: white;
     text-align: center;
     padding: 20px;
@@ -302,7 +302,7 @@ h2 {
 }
 
 footer {
-    background-color: #083D77;
+    background-color: #083D77; /*#112A46*/
     text-align: center;
     padding: 10px 0;
 }
