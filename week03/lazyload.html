@@ -3,14 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lazy Load</title>
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
 </head>
 <body>
     <header>
-      <h1>Random Images</h1>
+      <h1>Lazy Load</h1>
     </header>
+    <main>
+        <picture><img src="images/discover2.webp" alt="discover" loading="lazy" width="400" height="600"></picture>
+        <picture><img src="images/everyone.webp" alt="everyone" loading="lazy" width="400" height="600"></picture>
+        <picture><img src="images/landscape.webp" alt="landscape" loading="lazy" width="400" height="600"></picture>
+        <picture><img src="images/mormon.webp" alt="mormon" loading="lazy" width="400" height="600"></picture>
+        <picture><img src="images/rs.webp" alt="rs" loading="lazy" width="400" height="600"></picture>
+        <picture><img src="images/tulips.webp" alt="tulips" loading="lazy" width="400" height="600"></picture>
+    </main>
     <footer>
-
+        <p>@ copy <span id="year"></span>  😊 Evangelis Albesa😊 Canada</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
     </footer>
 </body>
 </html>
