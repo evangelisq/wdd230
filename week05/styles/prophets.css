@@ -45,6 +45,22 @@ footer {
     width: 100%;
     border-radius: 8px;
 }
+h1 {
+    font-size: 2.3em;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+    border-bottom: 4px solid #3498db;
+}
 .card h2 {
     font-size: 2.5em;
     color: #2c3e50;
