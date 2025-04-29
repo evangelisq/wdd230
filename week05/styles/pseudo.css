@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+section {
+     background-color: #ffffff;
+     border: 2px solid #ddd;
+     border-radius: 8px;
+     padding: 20px;
+     margin-bottom: 20px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /*margin: 20px;
+    padding: 10px;*/
+}
+.select-demo::selection {
+    color: red;
+    background: yellow;
+}
+
+.select-demo::first-letter {
+    font-size: 2em;
+    color: blue;
+    font-weight: bold;
+}
+.select-demo::first-line {
+    font-weight: bold;
+    color: maroon;
+    /*text-transform: uppercase;*/
+}
+.before-after::before {
+    content: "🎁";
+    margin-right: 10px;
+    /*font-size: 1.5em;*/
+    color: red;
+}
+.before-after::after {
+    content: "🌮";
+    margin-left: 10px;
+    /*font-size: 1.5em;*/
+    color: yellow;
+}
+.label::before {
+    content: 🎁;
+    margin-right: 5px;
+    color: red;
+}
+.steps-container {
+    margin-top: 20px;
+}
+.steps {
+    list-style: none;
+    padding: 0;
+}
+.steps li {
+    margin: 10px 0;
+    position: relative;
+}
+.steps li:nth-child(1)::before {
+    content: "1. ";
+    color: blue;
+    font-weight: bold;
+}
+.steps li:nth-child(2)::before {
+    content: "2. ";
+    color: blue;
+    font-weight: bold;
+}
+.steps li:nth-child(3)::before {
+    content: "3. ";
+    color: blue;
+    font-weight: bold;
+}
+.steps li::after {
+   
+    position: absolute;
+    right: -20px;
+    color: black;
+}
